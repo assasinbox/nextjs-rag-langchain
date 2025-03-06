@@ -6,6 +6,9 @@ import { HEALTH_SCORE_TEMPLATE } from './template';
 
 export const dynamic = 'force-dynamic';
 
+export const config = {
+    runtime: "edge",
+  };
 interface RequestBody {
     data: HealthData;
     weights: Record<string, number>;
@@ -21,6 +24,7 @@ export async function POST(req: Request) {
         console.log(promptTemplate);
         const prompt = PromptTemplate.fromTemplate(promptTemplate);
 
+        console.log('OPENAI_API_KEY: ', process.env.OPENAI_API_KEY);
         const model = new ChatOpenAI({
             apiKey: process.env.OPENAI_API_KEY!,
             model: 'gpt-3.5-turbo',

@@ -1,5 +1,7 @@
 'use client';
 
+import { SelectInput } from "../form/SelectInput";
+
 interface DietTypeSelectProps {
     register: any;
 }

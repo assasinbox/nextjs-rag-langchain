@@ -1,5 +1,7 @@
 'use client';
 
+import { TextInput } from "../form/TextInput";
+
 interface BloodPressureInputProps {
     register: any;
 }
