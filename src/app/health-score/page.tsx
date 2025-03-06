@@ -96,6 +96,7 @@ export default function HealthScorePage() {
 
         setLoading(true);
         setError(null);
+
         try {
             const response = await fetch('/api/health-score', {
                 method: 'POST',
@@ -108,13 +109,21 @@ export default function HealthScorePage() {
             });
 
             if (!response.ok) {
-                throw new Error('Failed to calculate health score');
+                const errorData = await response.json();
+                if (response.status === 408) {
+                    throw new Error('Request timed out. Please try again with a simpler template or fewer parameters.');
+                }
+                throw new Error(errorData.error || 'Failed to calculate health score');
             }
 
             const result = await response.json();
             setResult(result);
         } catch (err: any) {
-            setError(err.message);
+            if (err.name === 'AbortError') {
+                setError('Calculation cancelled');
+            } else {
+                setError(err.message || 'An error occurred during calculation');
+            }
         } finally {
             setLoading(false);
         }
@@ -307,7 +316,7 @@ export default function HealthScorePage() {
 
                         {/* Nutrition */}
                         <fieldset className="border p-4 rounded">
-                            <legend className="font-bold">{HEALTH_GROUPS.nutrion.title} ({HEALTH_GROUPS.nutrion.weight}%)</legend>
+                            <legend className="font-bold">{HEALTH_GROUPS.nutrition.title} ({HEALTH_GROUPS.nutrition.weight}%)</legend>
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                 <NumberInput
                                     label="Protein (g)"

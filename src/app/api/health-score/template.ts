@@ -55,7 +55,7 @@ Use the following custom weights to calculate the final Health Score (0-100):
 - Vital Signs: {vitalWeight}%
 - Activity: {activityWeight}%
 - Sleep: {sleepWeight}%
-- Nutrition: {nutrionWeight}%
+- Nutrition: {nutritionWeight}%
 - Blood Markers: {bloodWeight}%
 
 Calculate the weighted average of all scores using these percentages.
@@ -71,7 +71,7 @@ Return the response in the following JSON format:
         "vital": number,
         "activity": number,
         "sleep": number,
-        "nutrion": number,
+        "nutrition": number,
         "blood": number,
         "overallScore": number
     }},
@@ -80,7 +80,7 @@ Return the response in the following JSON format:
         "vital": string[],
         "activity": string[],
         "sleep": string[],
-        "nutrion": string[],
+        "nutrition": string[],
         "blood": string[]
     }}
 }}`; 

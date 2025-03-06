@@ -52,7 +52,7 @@ export interface HealthScoreResponse {
         vital: number;
         activity: number;
         sleep: number;
-        nutrion: number;
+        nutrition: number;
         blood: number;
         overallScore: number;
     };
@@ -61,7 +61,7 @@ export interface HealthScoreResponse {
         vital: string[];
         activity: string[];
         sleep: string[];
-        nutrion: string[];
+        nutrition: string[];
         blood: string[];
     };
 } 

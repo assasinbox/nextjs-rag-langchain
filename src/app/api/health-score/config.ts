@@ -19,7 +19,7 @@ export const HEALTH_GROUPS = {
         params: ["sleep", "deepSleep"],
         weight: 15
     },
-    nutrion: {
+    nutrition: {
         title: "Nutrition",
         params: ["dietaryProtein", "dietaryFiber", "dietaryWater"],
         weight: 15
