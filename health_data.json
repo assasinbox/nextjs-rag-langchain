@@ -1,0 +1,82 @@
+{
+  "from_app": {
+    "sex": "male",
+    "age": 25,
+    "weight": 72,
+    "height": 180
+  },
+  "calculables": {
+    "bmi": "weight / (height * height)"
+  },
+  "params":{
+    "sex": "male",
+    "age": 25,
+    "bmi": "weight / (height * height)",
+    "weight": 72,
+    "height": 180,
+    "stepCount": 10567,
+    "flightsClimbed": 12,
+    "activeEnergyBurned": 250,
+    "basalEnergyBurned": 60,
+    "distanceWalkingRunning": 7.8,
+    "distanceSwimming":  1.8,
+    "distanceCycling": 11.8,
+    "heartRate": 80,
+    "heartRateResting": 68.5,
+    "heartRateVariability": 0.5,
+    "bloodPressure": { "systolicValue": 120, "diastolicValue": 80 },
+    "respiratoryRate": 16,
+    "bodyTemperature": 98.6,
+    "oxygenSaturation": 0.98,
+    "sleep": "6h 30m",
+    "deepSleep": "1h 30m",
+    "bodyFatPercentage": 16.5,
+    "waistCircumference": 38.5,
+    "dietaryProtein": 39,
+    "dietaryFiber": 39,
+    "dietaryWater": 0.6,
+    "bloodGlucose": 5.7,
+    "insulinDelivery": 5,
+    "bloodAlcoholContent": 0.00015,
+    "mindfulSession": 24
+  },
+  "groups":{
+    "body": {
+      "params": ["sex", "age", "weight", "height", "bmi", "bodyFatPercentage", "waistCircumference"],
+      "weight": 15
+    },
+    "vital": {
+      "params": ["heartRate", "heartRateResting", "heartRateVariability", "bloodPressure", "respiratoryRate", "bodyTemperature", "oxygenSaturation"],
+      "weight": 25
+    },
+    "activity": {
+      "params": ["stepCount", "flightsClimbed", "activeEnergyBurned", "basalEnergyBurned", "distanceWalkingRunning", "distanceSwimming", "distanceCycling"],
+      "weight": 20
+    },
+    "sleep": {
+      "params": ["sleep", "deepSleep"],
+      "weight": 15
+    },
+    "nutrion": {
+      "params": ["dietaryProtein", "dietaryFiber", "dietaryWater"],
+      "weight": 15
+    },
+    "blood": {
+      "params": ["bloodGlucose", "insulinDelivery", "bloodAlcoholContent"],
+      "weight": 10
+    },
+    "mental": {
+      "params": ["mindfulSession"],
+      "weight": 10
+    }
+  },
+  "focuses":{
+    "activity": ["stepCount", "flightsClimbed", "activeEnergyBurned", "basalEnergyBurned", "distanceWalkingRunning", "distanceSwimming", "distanceCycling"],
+    "water": ["dietaryWater"],
+    "sleep": "improve sleep",
+    "nutrion": ["dietaryProtein", "dietaryFiber"],
+    "weight": "improve weight",
+    "health": "improve health",
+    "mental": "improve mental health"
+  }
+}
