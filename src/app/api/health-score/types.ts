@@ -173,6 +173,58 @@ export interface HealthScoreResponse {
       heartHealth: string[];
       mentalHealth: string[];
   };
+  parameters_status: {
+    activeEnergyBurned: string;
+    basalEnergyBurned: string;
+    standHours: string;
+    exerciseMinutes: string;
+    stepCount: string;
+    flightsClimbed: string;
+    distance: string;
+    walkingSpeed: string;
+    walkingSteadiness: string;
+    stairSpeedDown: string;
+    stairSpeedUp: string;
+    sixMinuteWalkTestDistance: string;
+    water: string;
+    sleepAnalysis: string;
+    deepSleep: string;
+    remSleep: string;
+    coreSleep: string;
+    sleepAwake: string;
+    sleepLatency: string;
+    sleepQuality: string;
+    dietaryEnergy: string;
+    dietaryCarbohydrates: string;
+    dietaryProtein: string;
+    dietaryFat: string;
+    dietaryFiber: string;
+    dietarySugar: string;
+    dietarySodium: string;
+    bodyMass: string,
+    bodyMassIndex: string,
+    bodyFatPercentage: string;
+    leanBodyMass: string;
+    waistCircumference: string;
+    heartRate: string;
+    restingHeartRate: string;
+    walkingHeartRateAverage: string;
+    heartRateVariability: string;
+    bloodPressureSystolic: string;
+    bloodPressureDiastolic: string;
+    respiratoryRate: string;
+    bloodOxygenSaturation: string;
+    bodyTemperature: string;
+    ECGOutput: string;
+    ECGClassification: string;
+    mindfulMinutes: string;
+    mindfulSession: string;
+    mood: string;
+    stressLevels: string;
+    energyLevels: string;
+    socialInteractions: string;
+  };
+  summary: string;
 } 
 
 export const HEALTH_GROUPS = {
