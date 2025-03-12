@@ -10,6 +10,7 @@ import { NumberInput } from '@/components/form/NumberInput';
 import { HEALTH_GROUPS } from '../api/health-score/types';
 import { WeightAdjuster } from '@/components/health-form/WeightAdjuster';
 import { PromptTemplateEditor } from '@/components/health-form/PromptTemplateEditor';
+import { SelectInput } from '@/components/form/SelectInput';
 
 export default function HealthScorePage() {
     const [loading, setLoading] = useState(false);
@@ -94,11 +95,10 @@ export default function HealthScorePage() {
                     <PromptTemplateEditor onTemplateChange={setCustomTemplate} />
                     <WeightAdjuster onWeightsChange={setWeights} />
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-                        {/* Activity Metrics */}
-                        <fieldset className="border p-4 rounded">
-                            <legend className="font-bold">{HEALTH_GROUPS.activity.title} ({HEALTH_GROUPS.activity.weight}%)</legend>
+                    <fieldset className="border p-4 rounded">
+                            <legend className="font-bold">Base User Data</legend>
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                                {/* <SelectInput
+                                <SelectInput
                                     label="Sex"
                                     name="sex"
                                     register={register}
@@ -109,24 +109,24 @@ export default function HealthScorePage() {
                                 />
                                 <NumberInput
                                     label="Age"
-                                    name="age"
+                                    name="age"  
                                     register={register}
                                     min={0}
                                     max={120}
-                                />
-                                <NumberInput
-                                    label="Body Mass (kg)"
-                                    name="bodyMass"
-                                    register={register}
-                                    step="0.1"
-                                    min={0}
                                 />
                                 <NumberInput
                                     label="Height (cm)"
                                     name="height"
                                     register={register}
                                     min={0}
-                                /> */}
+                                />
+                            </div>
+                        </fieldset>
+                                    
+                        {/* Activity Metrics */}
+                        <fieldset className="border p-4 rounded">
+                            <legend className="font-bold">{HEALTH_GROUPS.activity.title} ({HEALTH_GROUPS.activity.weight}%)</legend>
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                 <NumberInput
                                     label="Active Energy Burned (cal)"
                                     name="activeEnergyBurned"
