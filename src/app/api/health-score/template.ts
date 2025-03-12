@@ -1,62 +1,89 @@
-import { HEALTH_GROUPS } from './config';
-
 export const HEALTH_SCORE_TEMPLATE = `You are a medical AI assistant. 
 Your task is to evaluate a user's health based on multiple parameter groups and provide a final Health Score 
 (0-100, where 100 represents optimal health) along with recommendations for improvement.
+Given the following health data for a {sex} individual, age {age} groups and weights,
 
 ### User health parameters
-Body Metrics:
-- Sex: {sex}
-- Age: {age}
-- Weight: {weight} kg
-- Height: {height} cm
-- BMI: {bmi}
-- Body Fat: {bodyFatPercentage}%
-- Waist: {waistCircumference} cm
-
-Vital Signs:
-- Heart Rate: {heartRate} bpm
-- Resting Heart Rate: {heartRateResting} bpm
-- Heart Rate Variability: {heartRateVariability}
-- Blood Pressure: {bloodPressure.systolicValue}/{bloodPressure.diastolicValue} mmHg
-- Respiratory Rate: {respiratoryRate} breaths/min
-- Body Temperature: {bodyTemperature}°F
-- Oxygen Saturation: {oxygenSaturation}%
+User parameters:
+- sex: {sex}
+- age: {age}
+- height: {height} cm
 
 Activity:
-- Steps: {stepCount} steps
-- Flights Climbed: {flightsClimbed}
-- Active Energy: {activeEnergyBurned} calories
-- Basal Energy: {basalEnergyBurned} calories
-- Walking/Running: {distanceWalkingRunning} km
-- Swimming: {distanceSwimming} km
-- Cycling: {distanceCycling} km
+- activeEnergyBurned: {activeEnergyBurned} calories
+- basalEnergyBurned: {basalEnergyBurned} calories
+- standHours: {standHours} hours
+- exerciseMinutes: {exerciseMinutes} minutes
+- stepCount: {stepCount} steps
+- flightsClimbed: {flightsClimbed}
+- distance: {distance} km
+- walkingSpeed: {walkingSpeed} km/h
+- walkingSteadiness: {walkingSteadiness}
+- stairSpeedDown: {stairSpeedDown} km/h
+- stairSpeedUp: {stairSpeedUp} km/h
+- sixMinuteWalkTestDistance: {sixMinuteWalkTestDistance} km
+
+Water:
+- water: {water} ml
 
 Sleep:
-- Total Sleep: {sleep}
-- Deep Sleep: {deepSleep}
+- sleepAnalysis: {sleepAnalysis} hours
+- deepSleep: {deepSleep} hours
+- remSleep: {remSleep} hours
+- coreSleep: {coreSleep} hours
+- sleepAwake: {sleepAwake} hours
+- sleepLatency: {sleepLatency} hours
+- sleepQuality: {sleepQuality}
 
 Nutrition:
-- Protein: {dietaryProtein} g
-- Fiber: {dietaryFiber} g
-- Water: {dietaryWater} L
+- dietaryEnergy: {dietaryEnergy} calories
+- dietaryCarbohydrates: {dietaryCarbohydrates} g
+- dietaryProtein: {dietaryProtein} g
+- dietaryFat: {dietaryFat} g
+- dietaryFiber: {dietaryFiber} g
+- dietarySugar: {dietarySugar} g
+- dietarySodium: {dietarySodium} mg
 
-Blood Markers:
-- Glucose: {bloodGlucose} mmol/L
-- Insulin: {insulinDelivery} units
-- Blood Alcohol: {bloodAlcoholContent}%
+Weight Metrics:
+- bodyMass: {bodyMass} kg
+- bodyMassIndex: {bodyMassIndex}
+- bodyFatPercentage: {bodyFatPercentage}%
+- leanBodyMass: {leanBodyMass} kg
+- waistCircumference: {waistCircumference} cm
+
+Heart Health:
+- heartRate: {heartRate} bpm
+- restingHeartRate: {restingHeartRate} bpm
+- walkingHeartRateAverage: {walkingHeartRateAverage} bpm
+- heartRateVariability: {heartRateVariability}
+- bloodPressureSystolic: {bloodPressureSystolic} mmHg
+- bloodPressureDiastolic: {bloodPressureDiastolic} mmHg
+- respiratoryRate: {respiratoryRate} breaths/min
+- bloodOxygenSaturation: {bloodOxygenSaturation}%
+- bodyTemperature: {bodyTemperature}°F  
+- ECGOutput: {ECGOutput}
+- ECGClassification: {ECGClassification}
+
+Mental Health:
+- mindfulMinutes: {mindfulMinutes} minutes
+- mindfulSession: {mindfulSession}  
+- mood: {mood}
+- stressLevels: {stressLevels}
+- energyLevels: {energyLevels}
+- socialInteractions: {socialInteractions}
 
 ### Step 1: Evaluate Parameter Groups
 Assess each group individually and assign a score from 0 to 100 based on medical knowledge.
 
 ### Step 2: Calculate the Overall Health Score
 Use the following custom weights to calculate the final Health Score (0-100):
-- Body Metrics: {bodyWeight}%
-- Vital Signs: {vitalWeight}%
 - Activity: {activityWeight}%
+- Water: {waterWeight}%
 - Sleep: {sleepWeight}%
 - Nutrition: {nutritionWeight}%
-- Blood Markers: {bloodWeight}%
+- Weight: {weightWeight}%
+- Heart Health: {heartHealthWeight}%
+- Mental Health: {mentalHealthWeight}%
 
 Calculate the weighted average of all scores using these percentages.
 
@@ -67,20 +94,22 @@ For each group of parameters that scored less than 70, make specific, actionable
 Return the response in the following JSON format:
 {{
     "scores": {{
-        "body": number,
-        "vital": number,
-        "activity": number,
-        "sleep": number,
-        "nutrition": number,
-        "blood": number,
-        "overallScore": number
+        activity: number;
+        water: number;
+        sleep: number;
+        nutrition: number;
+        weight: number;
+        heartHealth: number;
+        mentalHealth: number;
+        overallScore: number;
     }},
     "recommendations": {{
-        "body": string[],
-        "vital": string[],
-        "activity": string[],
-        "sleep": string[],
-        "nutrition": string[],
-        "blood": string[]
+        activity: string[];
+        water: string[];
+        sleep: string[];
+        nutrition: string[];
+        weight: string[];
+        heartHealth: string[];
+        mentalHealth: string[];
     }}
 }}`; 

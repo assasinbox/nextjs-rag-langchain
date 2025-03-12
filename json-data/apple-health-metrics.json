@@ -1,0 +1,400 @@
+[
+  {
+    "name": "Activity",
+    "unit": "various",
+    "dataType": "Double",
+    "description": "Physical activity metrics",
+    "subMetrics": [
+      {
+        "name": "Active Energy Burned",
+        "unit": "kcal",
+        "dataType": "Double",
+        "description": "Active calories burned"
+      },
+      {
+        "name": "Basal Energy Burned",
+        "unit": "kcal",
+        "dataType": "Double",
+        "description": "Resting calories burned"
+      },
+      {
+        "name": "Stand Hours",
+        "unit": "hours",
+        "dataType": "Integer",
+        "description": "Hours in which the user stood for at least 1 minute"
+      },
+      {
+        "name": "Exercise Minutes",
+        "unit": "minutes",
+        "dataType": "Integer",
+        "description": "Minutes of brisk activity"
+      },
+      {
+        "name": "Step Count",
+        "unit": "count",
+        "dataType": "Integer",
+        "description": "Number of steps taken"
+      },
+      {
+        "name": "Flights Climbed",
+        "unit": "count",
+        "dataType": "Integer",
+        "description": "Number of flights climbed"
+      },
+      {
+        "name": "Distance",
+        "unit": "mi/km",
+        "dataType": "Double",
+        "description": "Distance traveled"
+      }
+    ]
+  },
+  {
+    "name": "Body Measurements",
+    "unit": "various",
+    "dataType": "Double",
+    "description": "Physical body measurements",
+    "subMetrics": [
+      {
+        "name": "Height",
+        "unit": "in/cm",
+        "dataType": "Double",
+        "description": "User's height"
+      },
+      {
+        "name": "Body Mass",
+        "unit": "lb/kg",
+        "dataType": "Double",
+        "description": "User's weight"
+      },
+      {
+        "name": "Body Mass Index",
+        "unit": "count",
+        "dataType": "Double",
+        "description": "BMI score"
+      },
+      {
+        "name": "Body Fat Percentage",
+        "unit": "%",
+        "dataType": "Double",
+        "description": "Percentage of body fat"
+      },
+      {
+        "name": "Lean Body Mass",
+        "unit": "lb/kg",
+        "dataType": "Double",
+        "description": "Lean body mass"
+      },
+      {
+        "name": "Waist Circumference",
+        "unit": "in/cm",
+        "dataType": "Double",
+        "description": "Circumference of waist"
+      }
+    ]
+  },
+  {
+    "name": "Vital Signs",
+    "unit": "various",
+    "dataType": "Double",
+    "description": "Key indicators of health status",
+    "subMetrics": [
+      {
+        "name": "Heart Rate",
+        "unit": "count/min",
+        "dataType": "Double",
+        "description": "Heart beats per minute"
+      },
+      {
+        "name": "Resting Heart Rate",
+        "unit": "count/min",
+        "dataType": "Double",
+        "description": "Heart rate at rest"
+      },
+      {
+        "name": "Walking Heart Rate Average",
+        "unit": "count/min",
+        "dataType": "Double",
+        "description": "Average heart rate while walking"
+      },
+      {
+        "name": "Heart Rate Variability",
+        "unit": "ms",
+        "dataType": "Double",
+        "description": "Variation in time between heart beats"
+      },
+      {
+        "name": "Blood Pressure Systolic",
+        "unit": "mmHg",
+        "dataType": "Double",
+        "description": "Systolic blood pressure"
+      },
+      {
+        "name": "Blood Pressure Diastolic",
+        "unit": "mmHg",
+        "dataType": "Double",
+        "description": "Diastolic blood pressure"
+      },
+      {
+        "name": "Respiratory Rate",
+        "unit": "count/min",
+        "dataType": "Double",
+        "description": "Breaths per minute"
+      },
+      {
+        "name": "Blood Oxygen Saturation",
+        "unit": "%",
+        "dataType": "Double",
+        "description": "Percentage of oxygen in blood"
+      },
+      {
+        "name": "Body Temperature",
+        "unit": "°F/°C",
+        "dataType": "Double",
+        "description": "Body temperature"
+      }
+    ]
+  },
+  {
+    "name": "Sleep",
+    "unit": "various",
+    "dataType": "Various",
+    "description": "Sleep analysis metrics",
+    "subMetrics": [
+      {
+        "name": "Sleep Analysis",
+        "unit": "hours",
+        "dataType": "Double",
+        "description": "Sleep duration"
+      },
+      {
+        "name": "Deep Sleep",
+        "unit": "hours",
+        "dataType": "Double",
+        "description": "Time spent in deep sleep"
+      },
+      {
+        "name": "REM Sleep",
+        "unit": "hours",
+        "dataType": "Double",
+        "description": "Time spent in REM sleep"
+      },
+      {
+        "name": "Core Sleep",
+        "unit": "hours",
+        "dataType": "Double",
+        "description": "Time spent in core sleep"
+      },
+      {
+        "name": "Sleep Awake",
+        "unit": "hours",
+        "dataType": "Double",
+        "description": "Time spent awake during sleep session"
+      },
+      {
+        "name": "Sleep Latency",
+        "unit": "minutes",
+        "dataType": "Double",
+        "description": "Time to fall asleep"
+      },
+      {
+        "name": "Sleep Quality",
+        "unit": "score",
+        "dataType": "Double",
+        "description": "Overall quality of sleep (0-100)"
+      }
+    ]
+  },
+  {
+    "name": "Nutrition",
+    "unit": "various",
+    "dataType": "Double",
+    "description": "Dietary intake metrics",
+    "subMetrics": [
+      {
+        "name": "Dietary Energy",
+        "unit": "kcal",
+        "dataType": "Double",
+        "description": "Calories consumed"
+      },
+      {
+        "name": "Dietary Carbohydrates",
+        "unit": "g",
+        "dataType": "Double",
+        "description": "Carbohydrates consumed"
+      },
+      {
+        "name": "Dietary Protein",
+        "unit": "g",
+        "dataType": "Double",
+        "description": "Protein consumed"
+      },
+      {
+        "name": "Dietary Fat",
+        "unit": "g",
+        "dataType": "Double",
+        "description": "Fat consumed"
+      },
+      {
+        "name": "Dietary Fiber",
+        "unit": "g",
+        "dataType": "Double",
+        "description": "Fiber consumed"
+      },
+      {
+        "name": "Dietary Sugar",
+        "unit": "g",
+        "dataType": "Double",
+        "description": "Sugar consumed"
+      },
+      {
+        "name": "Dietary Sodium",
+        "unit": "mg",
+        "dataType": "Double",
+        "description": "Sodium consumed"
+      },
+      {
+        "name": "Water",
+        "unit": "mL",
+        "dataType": "Double",
+        "description": "Water intake"
+      }
+    ]
+  },
+  {
+    "name": "Mindfulness",
+    "unit": "minutes",
+    "dataType": "Double",
+    "description": "Mental wellness metrics",
+    "subMetrics": [
+      {
+        "name": "Mindful Minutes",
+        "unit": "minutes",
+        "dataType": "Double",
+        "description": "Time spent on mindfulness activities"
+      },
+      {
+        "name": "Mindful Session",
+        "unit": "count",
+        "dataType": "Integer",
+        "description": "Number of mindfulness sessions"
+      }
+    ]
+  },
+  {
+    "name": "Mobility",
+    "unit": "various",
+    "dataType": "Double",
+    "description": "Physical movement capability metrics",
+    "subMetrics": [
+      {
+        "name": "Walking Speed",
+        "unit": "m/s",
+        "dataType": "Double",
+        "description": "Average walking speed"
+      },
+      {
+        "name": "Walking Steadiness",
+        "unit": "%",
+        "dataType": "Double",
+        "description": "Measure of walking stability"
+      },
+      {
+        "name": "Stair Speed Down",
+        "unit": "seconds",
+        "dataType": "Double",
+        "description": "Time to descend stairs"
+      },
+      {
+        "name": "Stair Speed Up",
+        "unit": "seconds",
+        "dataType": "Double",
+        "description": "Time to ascend stairs"
+      },
+      {
+        "name": "Six-Minute Walk Test Distance",
+        "unit": "m",
+        "dataType": "Double",
+        "description": "Distance walked in six minutes"
+      }
+    ]
+  },
+  {
+    "name": "ECG",
+    "unit": "mV",
+    "dataType": "Double",
+    "description": "Electrocardiogram measurements",
+    "subMetrics": [
+      {
+        "name": "ECG Output",
+        "unit": "mV",
+        "dataType": "Double",
+        "description": "Electrocardiogram voltage measurements"
+      },
+      {
+        "name": "ECG Classification",
+        "unit": "enum",
+        "dataType": "Enumeration",
+        "description": "Sinus rhythm, AFib, etc."
+      }
+    ]
+  },
+  {
+    "name": "Hearing",
+    "unit": "dB",
+    "dataType": "Double",
+    "description": "Metrics related to hearing health",
+    "subMetrics": [
+      {
+        "name": "Environmental Sound Levels",
+        "unit": "dB",
+        "dataType": "Double",
+        "description": "Environmental noise exposure"
+      },
+      {
+        "name": "Headphone Audio Levels",
+        "unit": "dB",
+        "dataType": "Double",
+        "description": "Audio exposure via headphones"
+      }
+    ]
+  },
+  {
+    "name": "Mental Health",
+    "unit": "various",
+    "dataType": "Various",
+    "description": "Metrics related to emotional and mental state",
+    "subMetrics": [
+      {
+        "name": "Mood",
+        "unit": "score",
+        "dataType": "Double",
+        "description": "Self-reported mood score (0-10)"
+      },
+      {
+        "name": "Stress Levels",
+        "unit": "score",
+        "dataType": "Double",
+        "description": "Self-reported or measured stress level (0-10)"
+      },
+      {
+        "name": "Sleep Quality",
+        "unit": "score",
+        "dataType": "Double",
+        "description": "Overall quality of sleep (0-100)"
+      },
+      {
+        "name": "Energy Levels",
+        "unit": "score",
+        "dataType": "Double",
+        "description": "Self-reported energy level (0-10)"
+      },
+      {
+        "name": "Social Interactions",
+        "unit": "count",
+        "dataType": "Integer",
+        "description": "Number of social interactions per day"
+      }
+    ]
+  }
+]

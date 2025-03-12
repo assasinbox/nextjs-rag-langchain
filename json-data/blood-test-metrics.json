@@ -1,0 +1,332 @@
+[
+  {
+    "name": "Complete Blood Count (CBC)",
+    "unit": "various",
+    "dataType": "Double",
+    "description": "Analysis of blood cells",
+    "subMetrics": [
+      {
+        "name": "White Blood Cell Count (WBC)",
+        "unit": "10³/µL",
+        "dataType": "Double",
+        "description": "Count of white blood cells"
+      },
+      {
+        "name": "Red Blood Cell Count (RBC)",
+        "unit": "10⁶/µL",
+        "dataType": "Double",
+        "description": "Count of red blood cells"
+      },
+      {
+        "name": "Hemoglobin (Hgb)",
+        "unit": "g/dL",
+        "dataType": "Double",
+        "description": "Oxygen-carrying protein in blood"
+      },
+      {
+        "name": "Hematocrit (Hct)",
+        "unit": "%",
+        "dataType": "Double",
+        "description": "Percentage of blood volume that is red blood cells"
+      },
+      {
+        "name": "Mean Corpuscular Volume (MCV)",
+        "unit": "fL",
+        "dataType": "Double",
+        "description": "Average size of red blood cells"
+      },
+      {
+        "name": "Mean Corpuscular Hemoglobin (MCH)",
+        "unit": "pg",
+        "dataType": "Double",
+        "description": "Average amount of hemoglobin per red blood cell"
+      },
+      {
+        "name": "Mean Corpuscular Hemoglobin Concentration (MCHC)",
+        "unit": "g/dL",
+        "dataType": "Double",
+        "description": "Average concentration of hemoglobin in red blood cells"
+      },
+      {
+        "name": "Platelet Count",
+        "unit": "10³/µL",
+        "dataType": "Double",
+        "description": "Count of platelets"
+      }
+    ]
+  },
+  {
+    "name": "Metabolic Panel",
+    "unit": "various",
+    "dataType": "Double",
+    "description": "Blood chemistry and organ function tests",
+    "subMetrics": [
+      {
+        "name": "Glucose",
+        "unit": "mg/dL",
+        "dataType": "Double",
+        "description": "Blood sugar level"
+      },
+      {
+        "name": "Calcium",
+        "unit": "mg/dL",
+        "dataType": "Double",
+        "description": "Calcium level"
+      },
+      {
+        "name": "Sodium",
+        "unit": "mmol/L",
+        "dataType": "Double",
+        "description": "Sodium level"
+      },
+      {
+        "name": "Potassium",
+        "unit": "mmol/L",
+        "dataType": "Double",
+        "description": "Potassium level"
+      },
+      {
+        "name": "Carbon Dioxide (CO2)",
+        "unit": "mmol/L",
+        "dataType": "Double",
+        "description": "Carbon dioxide level"
+      },
+      {
+        "name": "Chloride",
+        "unit": "mmol/L",
+        "dataType": "Double",
+        "description": "Chloride level"
+      },
+      {
+        "name": "Blood Urea Nitrogen (BUN)",
+        "unit": "mg/dL",
+        "dataType": "Double",
+        "description": "Kidney function indicator"
+      },
+      {
+        "name": "Creatinine",
+        "unit": "mg/dL",
+        "dataType": "Double",
+        "description": "Kidney function indicator"
+      },
+      {
+        "name": "Albumin",
+        "unit": "g/dL",
+        "dataType": "Double",
+        "description": "Liver function indicator"
+      },
+      {
+        "name": "Total Protein",
+        "unit": "g/dL",
+        "dataType": "Double",
+        "description": "Protein level in blood"
+      },
+      {
+        "name": "Bilirubin",
+        "unit": "mg/dL",
+        "dataType": "Double",
+        "description": "Liver function indicator"
+      },
+      {
+        "name": "Alkaline Phosphatase (ALP)",
+        "unit": "U/L",
+        "dataType": "Double",
+        "description": "Enzyme level"
+      },
+      {
+        "name": "Alanine Aminotransferase (ALT)",
+        "unit": "U/L",
+        "dataType": "Double",
+        "description": "Liver enzyme"
+      },
+      {
+        "name": "Aspartate Aminotransferase (AST)",
+        "unit": "U/L",
+        "dataType": "Double",
+        "description": "Liver enzyme"
+      }
+    ]
+  },
+  {
+    "name": "Lipid Panel",
+    "unit": "mg/dL",
+    "dataType": "Double",
+    "description": "Cholesterol and triglyceride tests",
+    "subMetrics": [
+      {
+        "name": "Total Cholesterol",
+        "unit": "mg/dL",
+        "dataType": "Double",
+        "description": "Total cholesterol level"
+      },
+      {
+        "name": "High-Density Lipoprotein (HDL)",
+        "unit": "mg/dL",
+        "dataType": "Double",
+        "description": "'Good' cholesterol"
+      },
+      {
+        "name": "Low-Density Lipoprotein (LDL)",
+        "unit": "mg/dL",
+        "dataType": "Double",
+        "description": "'Bad' cholesterol"
+      },
+      {
+        "name": "Triglycerides",
+        "unit": "mg/dL",
+        "dataType": "Double",
+        "description": "Fat in the blood"
+      }
+    ]
+  },
+  {
+    "name": "Thyroid Panel",
+    "unit": "various",
+    "dataType": "Double",
+    "description": "Thyroid function tests",
+    "subMetrics": [
+      {
+        "name": "Thyroid Stimulating Hormone (TSH)",
+        "unit": "mIU/L",
+        "dataType": "Double",
+        "description": "Pituitary hormone that stimulates the thyroid"
+      },
+      {
+        "name": "Free Thyroxine (FT4)",
+        "unit": "ng/dL",
+        "dataType": "Double",
+        "description": "Thyroid hormone"
+      },
+      {
+        "name": "Total Triiodothyronine (T3)",
+        "unit": "ng/dL",
+        "dataType": "Double",
+        "description": "Thyroid hormone"
+      }
+    ]
+  },
+  {
+    "name": "Inflammation Markers",
+    "unit": "various",
+    "dataType": "Double",
+    "description": "Indicators of inflammation",
+    "subMetrics": [
+      {
+        "name": "C-Reactive Protein (CRP)",
+        "unit": "mg/L",
+        "dataType": "Double",
+        "description": "Inflammation marker"
+      },
+      {
+        "name": "Erythrocyte Sedimentation Rate (ESR)",
+        "unit": "mm/hr",
+        "dataType": "Double",
+        "description": "Inflammation marker"
+      }
+    ]
+  },
+  {
+    "name": "Vitamin Levels",
+    "unit": "various",
+    "dataType": "Double",
+    "description": "Vitamin status indicators",
+    "subMetrics": [
+      {
+        "name": "Vitamin D, 25-Hydroxy",
+        "unit": "ng/mL",
+        "dataType": "Double",
+        "description": "Vitamin D status"
+      },
+      {
+        "name": "Vitamin B12",
+        "unit": "pg/mL",
+        "dataType": "Double",
+        "description": "Vitamin B12 status"
+      },
+      {
+        "name": "Folate (Vitamin B9)",
+        "unit": "ng/mL",
+        "dataType": "Double",
+        "description": "Folate status"
+      }
+    ]
+  },
+  {
+    "name": "Iron Studies",
+    "unit": "various",
+    "dataType": "Double",
+    "description": "Iron status indicators",
+    "subMetrics": [
+      {
+        "name": "Ferritin",
+        "unit": "ng/mL",
+        "dataType": "Double",
+        "description": "Iron storage protein"
+      },
+      {
+        "name": "Iron",
+        "unit": "µg/dL",
+        "dataType": "Double",
+        "description": "Iron level"
+      },
+      {
+        "name": "Total Iron Binding Capacity (TIBC)",
+        "unit": "µg/dL",
+        "dataType": "Double",
+        "description": "Iron binding capacity"
+      },
+      {
+        "name": "Transferrin Saturation",
+        "unit": "%",
+        "dataType": "Double",
+        "description": "Percentage of transferrin saturated with iron"
+      }
+    ]
+  },
+  {
+    "name": "Kidney Function",
+    "unit": "various",
+    "dataType": "Double",
+    "description": "Kidney health indicators",
+    "subMetrics": [
+      {
+        "name": "Estimated Glomerular Filtration Rate (eGFR)",
+        "unit": "mL/min/1.73m²",
+        "dataType": "Double",
+        "description": "Kidney filtration rate"
+      },
+      {
+        "name": "Uric Acid",
+        "unit": "mg/dL",
+        "dataType": "Double",
+        "description": "Waste product level"
+      }
+    ]
+  },
+  {
+    "name": "Hormones",
+    "unit": "various",
+    "dataType": "Double",
+    "description": "Hormone level tests",
+    "subMetrics": [
+      {
+        "name": "Testosterone",
+        "unit": "ng/dL",
+        "dataType": "Double",
+        "description": "Male sex hormone"
+      },
+      {
+        "name": "Estradiol",
+        "unit": "pg/mL",
+        "dataType": "Double",
+        "description": "Female sex hormone"
+      },
+      {
+        "name": "Cortisol",
+        "unit": "µg/dL",
+        "dataType": "Double",
+        "description": "Stress hormone"
+      }
+    ]
+  }
+]

@@ -9,9 +9,6 @@
     "bmi": "weight / (height * height)"
   },
   "params":{
-    "sex": "male",
-    "age": 25,
-    "bmi": "weight / (height * height)",
     "weight": 72,
     "height": 180,
     "stepCount": 10567,
@@ -73,10 +70,10 @@
   "focuses":{
     "activity": ["stepCount", "flightsClimbed", "activeEnergyBurned", "basalEnergyBurned", "distanceWalkingRunning", "distanceSwimming", "distanceCycling"],
     "water": ["dietaryWater"],
-    "sleep": "improve sleep",
-    "nutrion": ["dietaryProtein", "dietaryFiber"],
-    "weight": "improve weight",
-    "health": "improve health",
-    "mental": "improve mental health"
+    "sleep": ["sleep", "deepSleep"],
+    "nutrition": ["dietaryProtein", "dietaryFiber"],
+    "weight": ["weight", "bmi"],
+    "heartHealth": ["heartRate", "heartRateResting", "heartRateVariability", "bloodPressure", "respiratoryRate", "bodyTemperature", "oxygenSaturation"],
+    "mentalHealth": ["mindfulSession"]
   }
 }

@@ -1,0 +1,60 @@
+{
+    "Activity": [
+      "Active Energy Burned",
+      "Basal Energy Burned",
+      "Stand Hours",
+      "Exercise Minutes",
+      "Step Count",
+      "Flights Climbed",
+      "Distance"
+    ],
+    "Water": [
+      "Water"
+    ],
+    "Sleep": [
+      "Sleep Analysis",
+      "Deep Sleep",
+      "REM Sleep",
+      "Core Sleep",
+      "Sleep Awake",
+      "Sleep Latency",
+      "Sleep Quality"
+    ],
+    "Nutrition": [
+      "Dietary Energy",
+      "Dietary Carbohydrates",
+      "Dietary Protein",
+      "Dietary Fat",
+      "Dietary Fiber",
+      "Dietary Sugar",
+      "Dietary Sodium"
+    ], 
+    "Weight": [
+      "Height",
+      "Body Mass",
+      "Body Mass Index",
+      "Body Fat Percentage",
+      "Lean Body Mass",
+      "Waist Circumference"
+    ],    
+    "Heart Health": [
+      "Heart Rate",
+      "Resting Heart Rate",
+      "Walking Heart Rate Average",
+      "Heart Rate Variability",
+      "Blood Pressure Systolic",
+      "Blood Pressure Diastolic",
+      "Respiratory Rate",
+      "Blood Oxygen Saturation",
+      "Body Temperature"
+    ],
+    "Mental Health": [
+      "Mindful Minutes",
+      "Mindful Session",
+      "Mood",
+      "Stress Levels",
+      "Sleep Quality",
+      "Energy Levels",
+      "Social Interactions"      
+    ]
+  }

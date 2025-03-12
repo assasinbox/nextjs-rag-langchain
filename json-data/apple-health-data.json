@@ -1,0 +1,75 @@
+{
+    "Activity": [
+      "Active Energy Burned",
+      "Basal Energy Burned",
+      "Stand Hours",
+      "Exercise Minutes",
+      "Step Count",
+      "Flights Climbed",
+      "Distance"
+    ],
+    "Body Measurements": [
+      "Height",
+      "Body Mass",
+      "Body Mass Index",
+      "Body Fat Percentage",
+      "Lean Body Mass",
+      "Waist Circumference"
+    ],
+    "Vital Signs": [
+      "Heart Rate",
+      "Resting Heart Rate",
+      "Walking Heart Rate Average",
+      "Heart Rate Variability",
+      "Blood Pressure Systolic",
+      "Blood Pressure Diastolic",
+      "Respiratory Rate",
+      "Blood Oxygen Saturation",
+      "Body Temperature"
+    ],
+    "Sleep": [
+      "Sleep Analysis",
+      "Deep Sleep",
+      "REM Sleep",
+      "Core Sleep",
+      "Sleep Awake",
+      "Sleep Latency",
+      "Sleep Quality"
+    ],
+    "Nutrition": [
+      "Dietary Energy",
+      "Dietary Carbohydrates",
+      "Dietary Protein",
+      "Dietary Fat",
+      "Dietary Fiber",
+      "Dietary Sugar",
+      "Dietary Sodium",
+      "Water"
+    ],
+    "Mindfulness": [
+      "Mindful Minutes",
+      "Mindful Session"
+    ],
+    "Mobility": [
+      "Walking Speed",
+      "Walking Steadiness",
+      "Stair Speed Down",
+      "Stair Speed Up",
+      "Six-Minute Walk Test Distance"
+    ],
+    "ECG": [
+      "ECG Output",
+      "ECG Classification"
+    ],
+    "Hearing": [
+      "Environmental Sound Levels",
+      "Headphone Audio Levels"
+    ],
+    "Mental Health": [
+      "Mood",
+      "Stress Levels",
+      "Sleep Quality",
+      "Energy Levels",
+      "Social Interactions"
+    ]
+  }

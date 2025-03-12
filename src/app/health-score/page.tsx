@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import { HealthData, HealthScoreResponse } from '../api/health-score/types';
+import { HealthData, HealthScoreResponse, defaultHealthData } from '../api/health-score/types';
 import { NumberInput } from '@/components/form/NumberInput';
-import { SelectInput } from '@/components/form/SelectInput';
-import { BloodPressureInput } from '@/components/form/BloodPressureInput';
-import { TimeInput } from '@/components/form/TimeInput';
-import { HEALTH_GROUPS } from '../api/health-score/config';
+// import { SelectInput } from '@/components/form/SelectInput';
+// import { BloodPressureInput } from '@/components/form/BloodPressureInput';
+// import { TimeInput } from '@/components/form/TimeInput';
+import { HEALTH_GROUPS } from '../api/health-score/types';
 import { WeightAdjuster } from '@/components/health-form/WeightAdjuster';
 import { PromptTemplateEditor } from '@/components/health-form/PromptTemplateEditor';
 
@@ -24,51 +24,7 @@ export default function HealthScorePage() {
     const [customTemplate, setCustomTemplate] = useState<string | null>(null);
 
     const { register, handleSubmit, watch, setValue } = useForm<HealthData>({
-        defaultValues: {
-            // Body Metrics
-            sex: 'male',
-            age: 25,
-            weight: 72,
-            height: 180,
-            bmi: 22.2,
-            bodyFatPercentage: 16.5,
-            waistCircumference: 38.5,
-
-            // Vital Signs
-            heartRate: 80,
-            heartRateResting: 68.5,
-            heartRateVariability: 0.5,
-            bloodPressure: {
-                systolicValue: 120,
-                diastolicValue: 80
-            },
-            respiratoryRate: 16,
-            bodyTemperature: 98.6,
-            oxygenSaturation: 0.98,
-
-            // Activity
-            stepCount: 10567,
-            flightsClimbed: 12,
-            activeEnergyBurned: 250,
-            basalEnergyBurned: 60,
-            distanceWalkingRunning: 7.8,
-            distanceSwimming: 1.8,
-            distanceCycling: 11.8,
-
-            // Sleep
-            sleep: '6h 30m',
-            deepSleep: '1h 30m',
-
-            // Nutrition
-            dietaryProtein: 39,
-            dietaryFiber: 39,
-            dietaryWater: 0.6,
-
-            // Blood Markers
-            bloodGlucose: 5.7,
-            insulinDelivery: 5,
-            bloodAlcoholContent: 0.00015
-        }
+        defaultValues: defaultHealthData
     });
 
     const calculateBMI = (weight: number, height: number): number => {
@@ -76,13 +32,13 @@ export default function HealthScorePage() {
         return Number((weight / (heightInMeters * heightInMeters)).toFixed(1));
     };
 
-    const weight = watch('weight');
+    const weight = watch('bodyMass');
     const height = watch('height');
 
     useEffect(() => {
         if (weight && height) {
             const bmi = calculateBMI(weight, height);
-            setValue('bmi', bmi);
+            setValue('bodyMassIndex', bmi);
         }
     }, [weight, height, setValue]);
 
@@ -138,11 +94,11 @@ export default function HealthScorePage() {
                     <PromptTemplateEditor onTemplateChange={setCustomTemplate} />
                     <WeightAdjuster onWeightsChange={setWeights} />
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-                        {/* Body Metrics */}
+                        {/* Activity Metrics */}
                         <fieldset className="border p-4 rounded">
-                            <legend className="font-bold">{HEALTH_GROUPS.body.title} ({HEALTH_GROUPS.body.weight}%)</legend>
+                            <legend className="font-bold">{HEALTH_GROUPS.activity.title} ({HEALTH_GROUPS.activity.weight}%)</legend>
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                                <SelectInput
+                                {/* <SelectInput
                                     label="Sex"
                                     name="sex"
                                     register={register}
@@ -159,8 +115,8 @@ export default function HealthScorePage() {
                                     max={120}
                                 />
                                 <NumberInput
-                                    label="Weight (kg)"
-                                    name="weight"
+                                    label="Body Mass (kg)"
+                                    name="bodyMass"
                                     register={register}
                                     step="0.1"
                                     min={0}
@@ -170,87 +126,38 @@ export default function HealthScorePage() {
                                     name="height"
                                     register={register}
                                     min={0}
-                                />
+                                /> */}
                                 <NumberInput
-                                    label="BMI"
-                                    name="bmi"
+                                    label="Active Energy Burned (cal)"
+                                    name="activeEnergyBurned"
                                     register={register}
                                     step="0.1"
                                     readOnly={true}
                                 />
                                 <NumberInput
-                                    label="Body Fat %"
-                                    name="bodyFatPercentage"
+                                    label="Basal Energy Burned (cal)"
+                                    name="basalEnergyBurned"
                                     register={register}
                                     step="0.1"
                                     min={0}
-                                    max={100}
+                                    // max={100}
                                 />
                                 <NumberInput
-                                    label="Waist (cm)"
-                                    name="waistCircumference"
-                                    register={register}
-                                    step="0.1"
-                                    min={0}
-                                />
-                            </div>
-                        </fieldset>
-
-                        {/* Vital Signs */}
-                        <fieldset className="border p-4 rounded">
-                            <legend className="font-bold">{HEALTH_GROUPS.vital.title} ({HEALTH_GROUPS.vital.weight}%)</legend>
-                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                                <BloodPressureInput register={register} />
-                                <NumberInput
-                                    label="Heart Rate (bpm)"
-                                    name="heartRate"
-                                    register={register}
-                                    min={0}
-                                />
-                                <NumberInput
-                                    label="Resting HR (bpm)"
-                                    name="heartRateResting"
+                                    label="Stand Hours"
+                                    name="standHours"
                                     register={register}
                                     step="0.1"
                                     min={0}
                                 />
                                 <NumberInput
-                                    label="HRV"
-                                    name="heartRateVariability"
-                                    register={register}
-                                    step="0.01"
-                                    min={0}
-                                />
-                                <NumberInput
-                                    label="Respiratory Rate"
-                                    name="respiratoryRate"
-                                    register={register}
-                                    min={0}
-                                />
-                                <NumberInput
-                                    label="Body Temp (°F)"
-                                    name="bodyTemperature"
+                                    label="Exercise Minutes"
+                                    name="exerciseMinutes"
                                     register={register}
                                     step="0.1"
                                     min={0}
                                 />
                                 <NumberInput
-                                    label="O₂ Saturation"
-                                    name="oxygenSaturation"
-                                    register={register}
-                                    step="0.01"
-                                    min={0}
-                                    max={1}
-                                />
-                            </div>
-                        </fieldset>
-
-                        {/* Activity */}
-                        <fieldset className="border p-4 rounded">
-                            <legend className="font-bold">{HEALTH_GROUPS.activity.title} ({HEALTH_GROUPS.activity.weight}%)</legend>
-                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                                <NumberInput
-                                    label="Steps"
+                                    label="Step Count"
                                     name="stepCount"
                                     register={register}
                                     min={0}
@@ -262,34 +169,43 @@ export default function HealthScorePage() {
                                     min={0}
                                 />
                                 <NumberInput
-                                    label="Active Energy (cal)"
-                                    name="activeEnergyBurned"
-                                    register={register}
-                                    min={0}
-                                />
-                                <NumberInput
-                                    label="Basal Energy (cal)"
-                                    name="basalEnergyBurned"
-                                    register={register}
-                                    min={0}
-                                />
-                                <NumberInput
-                                    label="Walking/Running (km)"
-                                    name="distanceWalkingRunning"
+                                    label="Distance (km)"
+                                    name="distance"
                                     register={register}
                                     step="0.1"
                                     min={0}
                                 />
                                 <NumberInput
-                                    label="Swimming (km)"
-                                    name="distanceSwimming"
+                                    label="Walking Speed (km/h)"
+                                    name="walkingSpeed"
                                     register={register}
                                     step="0.1"
                                     min={0}
                                 />
                                 <NumberInput
-                                    label="Cycling (km)"
-                                    name="distanceCycling"
+                                    label="Walking Steadiness"
+                                    name="walkingSteadiness"
+                                    register={register}
+                                    step="0.1"
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Stair Speed Down (km/h)"
+                                    name="stairSpeedDown"
+                                    register={register}
+                                    step="0.1"
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Stair Speed Up (km/h)"
+                                    name="stairSpeedUp"
+                                    register={register}
+                                    step="0.1"
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Six Minute Walk Test Distance (m)"
+                                    name="sixMinuteWalkTestDistance"
                                     register={register}
                                     step="0.1"
                                     min={0}
@@ -297,74 +213,288 @@ export default function HealthScorePage() {
                             </div>
                         </fieldset>
 
-                        {/* Sleep */}
+                        <fieldset className="border p-4 rounded">
+                            <legend className="font-bold">{HEALTH_GROUPS.water.title} ({HEALTH_GROUPS.water.weight}%)</legend>
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                <NumberInput
+                                    label="Water (L)"
+                                    name="water"
+                                    register={register}
+                                    min={0}
+                                />
+
+                            </div>
+                        </fieldset>
+
                         <fieldset className="border p-4 rounded">
                             <legend className="font-bold">{HEALTH_GROUPS.sleep.title} ({HEALTH_GROUPS.sleep.weight}%)</legend>
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                                <TimeInput
-                                    label="Total Sleep"
-                                    name="sleep"
+                                <NumberInput
+                                    label="Sleep Analysis"
+                                    name="sleepAnalysis"
                                     register={register}
+                                    min={0}
                                 />
-                                <TimeInput
+                                <NumberInput
                                     label="Deep Sleep"
                                     name="deepSleep"
                                     register={register}
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="REM Sleep"
+                                    name="remSleep"
+                                    register={register}
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Core Sleep"
+                                    name="coreSleep"
+                                    register={register}
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Sleep Awake"
+                                    name="sleepAwake"
+                                    register={register}
+                                    step="0.1"
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Sleep Latency"
+                                    name="sleepLatency"
+                                    register={register}
+                                    step="0.1"
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Sleep Quality"
+                                    name="sleepQuality"
+                                    register={register}
+                                    step="0.1"
+                                    min={0}
                                 />
                             </div>
                         </fieldset>
 
-                        {/* Nutrition */}
                         <fieldset className="border p-4 rounded">
                             <legend className="font-bold">{HEALTH_GROUPS.nutrition.title} ({HEALTH_GROUPS.nutrition.weight}%)</legend>
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                 <NumberInput
-                                    label="Protein (g)"
+                                    label="Dietary Energy (cal)"
+                                    name="dietaryEnergy"
+                                    register={register}
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Dietary Carbohydrates (g)"
+                                    name="dietaryCarbohydrates"
+                                    register={register}
+                                    min={0}
+                                />  
+                                <NumberInput
+                                    label="Dietary Protein (g)"
                                     name="dietaryProtein"
                                     register={register}
                                     min={0}
                                 />
                                 <NumberInput
-                                    label="Fiber (g)"
+                                    label="Dietary Fat (g)"
+                                    name="dietaryFat"
+                                    register={register}
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Dietary Fiber (g)"
                                     name="dietaryFiber"
                                     register={register}
                                     min={0}
                                 />
                                 <NumberInput
-                                    label="Water (L)"
-                                    name="dietaryWater"
+                                    label="Dietary Sugar (g)"
+                                    name="dietarySugar"
                                     register={register}
-                                    step="0.1"
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Dietary Sodium (mg)"
+                                    name="dietarySodium"
+                                    register={register}
                                     min={0}
                                 />
                             </div>
                         </fieldset>
 
-                        {/* Blood Markers */}
                         <fieldset className="border p-4 rounded">
-                            <legend className="font-bold">{HEALTH_GROUPS.blood.title} ({HEALTH_GROUPS.blood.weight}%)</legend>
+                            <legend className="font-bold">{HEALTH_GROUPS.weight.title} ({HEALTH_GROUPS.weight.weight}%)</legend>
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                 <NumberInput
-                                    label="Blood Glucose"
-                                    name="bloodGlucose"
+                                    label="Body Mass (kg)"
+                                    name="bodyMass"
+                                    register={register}
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Body Mass Index"
+                                    name="bodyMassIndex"
+                                    register={register}
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Body Fat Percentage (%)"
+                                    name="bodyFatPercentage"
+                                    register={register}
+                                    step="0.1"
+                                    min={0}
+                                    />
+                                <NumberInput
+                                    label="Lean Body Mass (kg)"
+                                    name="leanBodyMass"
+                                    register={register}
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Waist Circumference (cm)"
+                                    name="waistCircumference"
+                                    register={register}
+                                    min={0}
+                                />
+                            </div>
+                        </fieldset>
+
+                        <fieldset className="border p-4 rounded">
+                            <legend className="font-bold">{HEALTH_GROUPS.heartHealth.title} ({HEALTH_GROUPS.heartHealth.weight}%)</legend>
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                <NumberInput
+                                    label="Heart Rate (bpm)"
+                                    name="heartRate"
                                     register={register}
                                     step="0.1"
                                     min={0}
                                 />
                                 <NumberInput
-                                    label="Insulin Delivery"
-                                    name="insulinDelivery"
+                                    label="Resting Heart Rate (bpm)"
+                                    name="restingHeartRate"
                                     register={register}
                                     step="0.1"
                                     min={0}
                                 />
                                 <NumberInput
-                                    label="Blood Alcohol"
-                                    name="bloodAlcoholContent"
+                                    label="Walking Heart Rate Average (bpm)"
+                                    name="walkingHeartRateAverage"
                                     register={register}
-                                    step="0.00001"
+                                    step="0.1"
+                                    min={0}
+                                    />
+                                <NumberInput
+                                    label="Heart Rate Variability"
+                                    name="heartRateVariability"
+                                    register={register}
+                                    step="0.1"
                                     min={0}
                                 />
+                                <NumberInput
+                                    label="Blood Pressure Systolic (mmHg)"
+                                    name="bloodPressureSystolic"
+                                    register={register}
+                                    step="0.1"
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Blood Pressure Diastolic (mmHg)"
+                                    name="bloodPressureDiastolic"
+                                    register={register}
+                                    step="0.1"
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Respiratory Rate (bpm)"
+                                    name="respiratoryRate"
+                                    register={register}
+                                    step="0.1"
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Blood Oxygen Saturation (%)"
+                                    name="bloodOxygenSaturation"
+                                    register={register}
+                                    step="0.1"
+                                    min={0}
+                                />  
+                                <NumberInput
+                                    label="Body Temperature (°C)"
+                                    name="bodyTemperature"
+                                    register={register}
+                                    step="0.1"
+                                    min={0}
+                                />  
+                                <NumberInput
+                                    label="ECG Output"
+                                    name="ECGOutput"
+                                    register={register}
+                                    step="0.1"
+                                    min={0} 
+                                />
+                                <NumberInput
+                                    label="ECG Classification"
+                                    name="ECGClassification"
+                                    register={register} 
+                                />  
+                            </div>
+                        </fieldset>
+
+                        <fieldset className="border p-4 rounded">
+                            <legend className="font-bold">{HEALTH_GROUPS.mentalHealth.title} ({HEALTH_GROUPS.mentalHealth.weight}%)</legend>
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                <NumberInput
+                                    label="Mindful Minutes"
+                                    name="mindfulMinutes"
+                                    register={register}
+                                    step="0.1"  
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Mindful Session"
+                                    name="mindfulSession"
+                                    register={register}
+                                    step="0.1"  
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Mood"
+                                    name="mood"
+                                    register={register}
+                                    step="0.1"  
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Stress Levels"
+                                    name="stressLevels" 
+                                    register={register} 
+                                    step="0.1"  
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Energy Levels"
+                                    name="energyLevels"
+                                    register={register}
+                                    step="0.1"  
+                                    min={0}
+                                />
+                                <NumberInput
+                                    label="Social Interactions"
+                                    name="socialInteractions"
+                                    register={register}
+                                    step="0.1"  
+                                    min={0}
+                                />  
+                            </div>
+                        </fieldset>
+
+                        <fieldset className="border p-4 rounded">
+                            <legend className="font-bold">{HEALTH_GROUPS.mentalHealth.title} ({HEALTH_GROUPS.mentalHealth.weight}%)</legend>
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                
                             </div>
                         </fieldset>
 

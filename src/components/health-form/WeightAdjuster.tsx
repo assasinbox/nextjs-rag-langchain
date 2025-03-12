@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { HEALTH_GROUPS } from '@/app/api/health-score/config';
+import { HEALTH_GROUPS } from '@/app/api/health-score/types';
 
 interface WeightAdjusterProps {
     onWeightsChange: (weights: Record<string, number>) => void;

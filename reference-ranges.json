@@ -1,0 +1,2198 @@
+[
+  {
+    "metric": "Heart Rate",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 60,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 50,
+        "max": 59
+      },
+      {
+        "min": 101,
+        "max": 120
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 49
+      },
+      {
+        "min": 121,
+        "max": 250
+      }
+    ],
+    "unit": "bpm"
+  },
+  {
+    "metric": "Heart Rate",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 60,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 50,
+        "max": 59
+      },
+      {
+        "min": 101,
+        "max": 120
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 49
+      },
+      {
+        "min": 121,
+        "max": 250
+      }
+    ],
+    "unit": "bpm"
+  },
+  {
+    "metric": "Heart Rate",
+    "ageGroup": "30-39",
+    "gender": "Male",
+    "good": {
+      "min": 60,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 50,
+        "max": 59
+      },
+      {
+        "min": 101,
+        "max": 120
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 49
+      },
+      {
+        "min": 121,
+        "max": 250
+      }
+    ],
+    "unit": "bpm"
+  },
+  {
+    "metric": "Heart Rate",
+    "ageGroup": "30-39",
+    "gender": "Female",
+    "good": {
+      "min": 60,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 50,
+        "max": 59
+      },
+      {
+        "min": 101,
+        "max": 120
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 49
+      },
+      {
+        "min": 121,
+        "max": 250
+      }
+    ],
+    "unit": "bpm"
+  },
+  {
+    "metric": "Heart Rate",
+    "ageGroup": "40-49",
+    "gender": "Male",
+    "good": {
+      "min": 60,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 50,
+        "max": 59
+      },
+      {
+        "min": 101,
+        "max": 120
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 49
+      },
+      {
+        "min": 121,
+        "max": 250
+      }
+    ],
+    "unit": "bpm"
+  },
+  {
+    "metric": "Heart Rate",
+    "ageGroup": "40-49",
+    "gender": "Female",
+    "good": {
+      "min": 60,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 50,
+        "max": 59
+      },
+      {
+        "min": 101,
+        "max": 120
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 49
+      },
+      {
+        "min": 121,
+        "max": 250
+      }
+    ],
+    "unit": "bpm"
+  },
+  {
+    "metric": "Blood Pressure Systolic",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 90,
+      "max": 120
+    },
+    "needsAttention": [
+      {
+        "min": 121,
+        "max": 139
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 89
+      },
+      {
+        "min": 140,
+        "max": 300
+      }
+    ],
+    "unit": "mmHg"
+  },
+  {
+    "metric": "Blood Pressure Systolic",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 90,
+      "max": 120
+    },
+    "needsAttention": [
+      {
+        "min": 121,
+        "max": 139
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 89
+      },
+      {
+        "min": 140,
+        "max": 300
+      }
+    ],
+    "unit": "mmHg"
+  },
+  {
+    "metric": "Blood Pressure Systolic",
+    "ageGroup": "30-39",
+    "gender": "Male",
+    "good": {
+      "min": 90,
+      "max": 120
+    },
+    "needsAttention": [
+      {
+        "min": 121,
+        "max": 139
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 89
+      },
+      {
+        "min": 140,
+        "max": 300
+      }
+    ],
+    "unit": "mmHg"
+  },
+  {
+    "metric": "Blood Pressure Systolic",
+    "ageGroup": "30-39",
+    "gender": "Female",
+    "good": {
+      "min": 90,
+      "max": 120
+    },
+    "needsAttention": [
+      {
+        "min": 121,
+        "max": 139
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 89
+      },
+      {
+        "min": 140,
+        "max": 300
+      }
+    ],
+    "unit": "mmHg"
+  },
+  {
+    "metric": "Blood Pressure Systolic",
+    "ageGroup": "40-49",
+    "gender": "Male",
+    "good": {
+      "min": 90,
+      "max": 120
+    },
+    "needsAttention": [
+      {
+        "min": 121,
+        "max": 139
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 89
+      },
+      {
+        "min": 140,
+        "max": 300
+      }
+    ],
+    "unit": "mmHg"
+  },
+  {
+    "metric": "Blood Pressure Systolic",
+    "ageGroup": "40-49",
+    "gender": "Female",
+    "good": {
+      "min": 90,
+      "max": 120
+    },
+    "needsAttention": [
+      {
+        "min": 121,
+        "max": 139
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 89
+      },
+      {
+        "min": 140,
+        "max": 300
+      }
+    ],
+    "unit": "mmHg"
+  },
+  {
+    "metric": "Blood Pressure Diastolic",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 60,
+      "max": 80
+    },
+    "needsAttention": [
+      {
+        "min": 81,
+        "max": 89
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 59
+      },
+      {
+        "min": 90,
+        "max": 200
+      }
+    ],
+    "unit": "mmHg"
+  },
+  {
+    "metric": "Blood Pressure Diastolic",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 60,
+      "max": 80
+    },
+    "needsAttention": [
+      {
+        "min": 81,
+        "max": 89
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 59
+      },
+      {
+        "min": 90,
+        "max": 200
+      }
+    ],
+    "unit": "mmHg"
+  },
+  {
+    "metric": "Blood Pressure Diastolic",
+    "ageGroup": "30-39",
+    "gender": "Male",
+    "good": {
+      "min": 60,
+      "max": 80
+    },
+    "needsAttention": [
+      {
+        "min": 81,
+        "max": 89
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 59
+      },
+      {
+        "min": 90,
+        "max": 200
+      }
+    ],
+    "unit": "mmHg"
+  },
+  {
+    "metric": "Blood Pressure Diastolic",
+    "ageGroup": "30-39",
+    "gender": "Female",
+    "good": {
+      "min": 60,
+      "max": 80
+    },
+    "needsAttention": [
+      {
+        "min": 81,
+        "max": 89
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 59
+      },
+      {
+        "min": 90,
+        "max": 200
+      }
+    ],
+    "unit": "mmHg"
+  },
+  {
+    "metric": "Respiratory Rate",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 12,
+      "max": 20
+    },
+    "needsAttention": [
+      {
+        "min": 8,
+        "max": 11
+      },
+      {
+        "min": 21,
+        "max": 25
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 7
+      },
+      {
+        "min": 26,
+        "max": 60
+      }
+    ],
+    "unit": "count/min"
+  },
+  {
+    "metric": "Respiratory Rate",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 12,
+      "max": 20
+    },
+    "needsAttention": [
+      {
+        "min": 8,
+        "max": 11
+      },
+      {
+        "min": 21,
+        "max": 25
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 7
+      },
+      {
+        "min": 26,
+        "max": 60
+      }
+    ],
+    "unit": "count/min"
+  },
+  {
+    "metric": "Blood Oxygen Saturation",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 95,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 90,
+        "max": 94
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 89
+      }
+    ],
+    "unit": "%"
+  },
+  {
+    "metric": "Blood Oxygen Saturation",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 95,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 90,
+        "max": 94
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 89
+      }
+    ],
+    "unit": "%"
+  },
+  {
+    "metric": "Body Temperature",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 97.8,
+      "max": 99.1
+    },
+    "needsAttention": [
+      {
+        "min": 99.2,
+        "max": 100.4
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 97.7
+      },
+      {
+        "min": 100.5,
+        "max": 110
+      }
+    ],
+    "unit": "°F"
+  },
+  {
+    "metric": "Body Temperature",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 97.8,
+      "max": 99.1
+    },
+    "needsAttention": [
+      {
+        "min": 99.2,
+        "max": 100.4
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 97.7
+      },
+      {
+        "min": 100.5,
+        "max": 110
+      }
+    ],
+    "unit": "°F"
+  },
+  {
+    "metric": "Step Count",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 7000,
+      "max": 20000
+    },
+    "needsAttention": [
+      {
+        "min": 5000,
+        "max": 6999
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 4999
+      }
+    ],
+    "unit": "count"
+  },
+  {
+    "metric": "Step Count",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 7000,
+      "max": 20000
+    },
+    "needsAttention": [
+      {
+        "min": 5000,
+        "max": 6999
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 4999
+      }
+    ],
+    "unit": "count"
+  },
+  {
+    "metric": "Sleep Analysis",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 7,
+      "max": 9
+    },
+    "needsAttention": [
+      {
+        "min": 6,
+        "max": 6.9
+      },
+      {
+        "min": 9.1,
+        "max": 10
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 5.9
+      },
+      {
+        "min": 10.1,
+        "max": 24
+      }
+    ],
+    "unit": "hours"
+  },
+  {
+    "metric": "Sleep Analysis",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 7,
+      "max": 9
+    },
+    "needsAttention": [
+      {
+        "min": 6,
+        "max": 6.9
+      },
+      {
+        "min": 9.1,
+        "max": 10
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 5.9
+      },
+      {
+        "min": 10.1,
+        "max": 24
+      }
+    ],
+    "unit": "hours"
+  },
+  {
+    "metric": "Total Cholesterol",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 125,
+      "max": 200
+    },
+    "needsAttention": [
+      {
+        "min": 201,
+        "max": 239
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 124
+      },
+      {
+        "min": 240,
+        "max": 500
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Total Cholesterol",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 125,
+      "max": 200
+    },
+    "needsAttention": [
+      {
+        "min": 201,
+        "max": 239
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 124
+      },
+      {
+        "min": 240,
+        "max": 500
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Total Cholesterol",
+    "ageGroup": "30-39",
+    "gender": "Male",
+    "good": {
+      "min": 125,
+      "max": 200
+    },
+    "needsAttention": [
+      {
+        "min": 201,
+        "max": 239
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 124
+      },
+      {
+        "min": 240,
+        "max": 500
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Total Cholesterol",
+    "ageGroup": "30-39",
+    "gender": "Female",
+    "good": {
+      "min": 125,
+      "max": 200
+    },
+    "needsAttention": [
+      {
+        "min": 201,
+        "max": 239
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 124
+      },
+      {
+        "min": 240,
+        "max": 500
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Total Cholesterol",
+    "ageGroup": "40-49",
+    "gender": "Male",
+    "good": {
+      "min": 125,
+      "max": 200
+    },
+    "needsAttention": [
+      {
+        "min": 201,
+        "max": 239
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 124
+      },
+      {
+        "min": 240,
+        "max": 500
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Total Cholesterol",
+    "ageGroup": "40-49",
+    "gender": "Female",
+    "good": {
+      "min": 125,
+      "max": 200
+    },
+    "needsAttention": [
+      {
+        "min": 201,
+        "max": 239
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 124
+      },
+      {
+        "min": 240,
+        "max": 500
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "High-Density Lipoprotein (HDL)",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 40,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 35,
+        "max": 39
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 34
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "High-Density Lipoprotein (HDL)",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 50,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 45,
+        "max": 49
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 44
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "High-Density Lipoprotein (HDL)",
+    "ageGroup": "30-39",
+    "gender": "Male",
+    "good": {
+      "min": 40,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 35,
+        "max": 39
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 34
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "High-Density Lipoprotein (HDL)",
+    "ageGroup": "30-39",
+    "gender": "Female",
+    "good": {
+      "min": 50,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 45,
+        "max": 49
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 44
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "High-Density Lipoprotein (HDL)",
+    "ageGroup": "40-49",
+    "gender": "Male",
+    "good": {
+      "min": 40,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 35,
+        "max": 39
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 34
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "High-Density Lipoprotein (HDL)",
+    "ageGroup": "40-49",
+    "gender": "Female",
+    "good": {
+      "min": 50,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 45,
+        "max": 49
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 44
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Low-Density Lipoprotein (LDL)",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 0,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 101,
+        "max": 129
+      }
+    ],
+    "bad": [
+      {
+        "min": 130,
+        "max": 300
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Low-Density Lipoprotein (LDL)",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 0,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 101,
+        "max": 129
+      }
+    ],
+    "bad": [
+      {
+        "min": 130,
+        "max": 300
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Low-Density Lipoprotein (LDL)",
+    "ageGroup": "30-39",
+    "gender": "Male",
+    "good": {
+      "min": 0,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 101,
+        "max": 129
+      }
+    ],
+    "bad": [
+      {
+        "min": 130,
+        "max": 300
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Low-Density Lipoprotein (LDL)",
+    "ageGroup": "30-39",
+    "gender": "Female",
+    "good": {
+      "min": 0,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 101,
+        "max": 129
+      }
+    ],
+    "bad": [
+      {
+        "min": 130,
+        "max": 300
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Low-Density Lipoprotein (LDL)",
+    "ageGroup": "40-49",
+    "gender": "Male",
+    "good": {
+      "min": 0,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 101,
+        "max": 129
+      }
+    ],
+    "bad": [
+      {
+        "min": 130,
+        "max": 300
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Low-Density Lipoprotein (LDL)",
+    "ageGroup": "40-49",
+    "gender": "Female",
+    "good": {
+      "min": 0,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 101,
+        "max": 129
+      }
+    ],
+    "bad": [
+      {
+        "min": 130,
+        "max": 300
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Glucose",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 70,
+      "max": 99
+    },
+    "needsAttention": [
+      {
+        "min": 100,
+        "max": 125
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 69
+      },
+      {
+        "min": 126,
+        "max": 300
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Glucose",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 70,
+      "max": 99
+    },
+    "needsAttention": [
+      {
+        "min": 100,
+        "max": 125
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 69
+      },
+      {
+        "min": 126,
+        "max": 300
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Glucose",
+    "ageGroup": "30-39",
+    "gender": "Male",
+    "good": {
+      "min": 70,
+      "max": 99
+    },
+    "needsAttention": [
+      {
+        "min": 100,
+        "max": 125
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 69
+      },
+      {
+        "min": 126,
+        "max": 300
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Glucose",
+    "ageGroup": "30-39",
+    "gender": "Female",
+    "good": {
+      "min": 70,
+      "max": 99
+    },
+    "needsAttention": [
+      {
+        "min": 100,
+        "max": 125
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 69
+      },
+      {
+        "min": 126,
+        "max": 300
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Hemoglobin (Hgb)",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 13.5,
+      "max": 17.5
+    },
+    "needsAttention": [
+      {
+        "min": 12.5,
+        "max": 13.4
+      },
+      {
+        "min": 17.6,
+        "max": 18.5
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 12.4
+      },
+      {
+        "min": 18.6,
+        "max": 25
+      }
+    ],
+    "unit": "g/dL"
+  },
+  {
+    "metric": "Hemoglobin (Hgb)",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 12,
+      "max": 15.5
+    },
+    "needsAttention": [
+      {
+        "min": 11,
+        "max": 11.9
+      },
+      {
+        "min": 15.6,
+        "max": 16.5
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 10.9
+      },
+      {
+        "min": 16.6,
+        "max": 25
+      }
+    ],
+    "unit": "g/dL"
+  },
+  {
+    "metric": "Vitamin D, 25-Hydroxy",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 30,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 20,
+        "max": 29
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 19
+      },
+      {
+        "min": 101,
+        "max": 150
+      }
+    ],
+    "unit": "ng/mL"
+  },
+  {
+    "metric": "Vitamin D, 25-Hydroxy",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 30,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 20,
+        "max": 29
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 19
+      },
+      {
+        "min": 101,
+        "max": 150
+      }
+    ],
+    "unit": "ng/mL"
+  },
+  {
+    "metric": "Active Energy Burned",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 400,
+      "max": 1200
+    },
+    "needsAttention": [
+      {
+        "min": 200,
+        "max": 399
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 199
+      }
+    ],
+    "unit": "kcal"
+  },
+  {
+    "metric": "Active Energy Burned",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 300,
+      "max": 1000
+    },
+    "needsAttention": [
+      {
+        "min": 150,
+        "max": 299
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 149
+      }
+    ],
+    "unit": "kcal"
+  },
+  {
+    "metric": "Resting Heart Rate",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 40,
+      "max": 70
+    },
+    "needsAttention": [
+      {
+        "min": 71,
+        "max": 80
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 39
+      },
+      {
+        "min": 81,
+        "max": 150
+      }
+    ],
+    "unit": "bpm"
+  },
+  {
+    "metric": "Resting Heart Rate",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 40,
+      "max": 70
+    },
+    "needsAttention": [
+      {
+        "min": 71,
+        "max": 80
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 39
+      },
+      {
+        "min": 81,
+        "max": 150
+      }
+    ],
+    "unit": "bpm"
+  },
+  {
+    "metric": "Heart Rate Variability",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 40,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 25,
+        "max": 39
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 24
+      }
+    ],
+    "unit": "ms"
+  },
+  {
+    "metric": "Heart Rate Variability",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 40,
+      "max": 100
+    },
+    "needsAttention": [
+      {
+        "min": 25,
+        "max": 39
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 24
+      }
+    ],
+    "unit": "ms"
+  },
+  {
+    "metric": "Body Mass Index",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 18.5,
+      "max": 24.9
+    },
+    "needsAttention": [
+      {
+        "min": 25,
+        "max": 29.9
+      },
+      {
+        "min": 17,
+        "max": 18.4
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 16.9
+      },
+      {
+        "min": 30,
+        "max": 50
+      }
+    ],
+    "unit": "count"
+  },
+  {
+    "metric": "Body Mass Index",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 18.5,
+      "max": 24.9
+    },
+    "needsAttention": [
+      {
+        "min": 25,
+        "max": 29.9
+      },
+      {
+        "min": 17,
+        "max": 18.4
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 16.9
+      },
+      {
+        "min": 30,
+        "max": 50
+      }
+    ],
+    "unit": "count"
+  },
+  {
+    "metric": "Body Fat Percentage",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 8,
+      "max": 19
+    },
+    "needsAttention": [
+      {
+        "min": 20,
+        "max": 24
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 7
+      },
+      {
+        "min": 25,
+        "max": 100
+      }
+    ],
+    "unit": "%"
+  },
+  {
+    "metric": "Body Fat Percentage",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 21,
+      "max": 32
+    },
+    "needsAttention": [
+      {
+        "min": 33,
+        "max": 38
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 20
+      },
+      {
+        "min": 39,
+        "max": 100
+      }
+    ],
+    "unit": "%"
+  },
+  {
+    "metric": "Deep Sleep",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 1.5,
+      "max": 2.5
+    },
+    "needsAttention": [
+      {
+        "min": 1,
+        "max": 1.4
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 0.9
+      },
+      {
+        "min": 2.6,
+        "max": 24
+      }
+    ],
+    "unit": "hours"
+  },
+  {
+    "metric": "Deep Sleep",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 1.5,
+      "max": 2.5
+    },
+    "needsAttention": [
+      {
+        "min": 1,
+        "max": 1.4
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 0.9
+      },
+      {
+        "min": 2.6,
+        "max": 24
+      }
+    ],
+    "unit": "hours"
+  },
+  {
+    "metric": "REM Sleep",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 1.5,
+      "max": 2.5
+    },
+    "needsAttention": [
+      {
+        "min": 1,
+        "max": 1.4
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 0.9
+      },
+      {
+        "min": 2.6,
+        "max": 24
+      }
+    ],
+    "unit": "hours"
+  },
+  {
+    "metric": "REM Sleep",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 1.5,
+      "max": 2.5
+    },
+    "needsAttention": [
+      {
+        "min": 1,
+        "max": 1.4
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 0.9
+      },
+      {
+        "min": 2.6,
+        "max": 24
+      }
+    ],
+    "unit": "hours"
+  },
+  {
+    "metric": "White Blood Cell Count (WBC)",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 4.5,
+      "max": 11
+    },
+    "needsAttention": [
+      {
+        "min": 3.5,
+        "max": 4.4
+      },
+      {
+        "min": 11.1,
+        "max": 15
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 3.4
+      },
+      {
+        "min": 15.1,
+        "max": 100
+      }
+    ],
+    "unit": "10³/µL"
+  },
+  {
+    "metric": "White Blood Cell Count (WBC)",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 4.5,
+      "max": 11
+    },
+    "needsAttention": [
+      {
+        "min": 3.5,
+        "max": 4.4
+      },
+      {
+        "min": 11.1,
+        "max": 15
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 3.4
+      },
+      {
+        "min": 15.1,
+        "max": 100
+      }
+    ],
+    "unit": "10³/µL"
+  },
+  {
+    "metric": "Red Blood Cell Count (RBC)",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 4.5,
+      "max": 5.9
+    },
+    "needsAttention": [
+      {
+        "min": 4,
+        "max": 4.4
+      },
+      {
+        "min": 6,
+        "max": 6.5
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 3.9
+      },
+      {
+        "min": 6.6,
+        "max": 10
+      }
+    ],
+    "unit": "10⁶/µL"
+  },
+  {
+    "metric": "Red Blood Cell Count (RBC)",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 4,
+      "max": 5.2
+    },
+    "needsAttention": [
+      {
+        "min": 3.5,
+        "max": 3.9
+      },
+      {
+        "min": 5.3,
+        "max": 5.8
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 3.4
+      },
+      {
+        "min": 5.9,
+        "max": 10
+      }
+    ],
+    "unit": "10⁶/µL"
+  },
+  {
+    "metric": "Hematocrit (Hct)",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 41,
+      "max": 50
+    },
+    "needsAttention": [
+      {
+        "min": 35,
+        "max": 40
+      },
+      {
+        "min": 51,
+        "max": 55
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 34
+      },
+      {
+        "min": 56,
+        "max": 100
+      }
+    ],
+    "unit": "%"
+  },
+  {
+    "metric": "Hematocrit (Hct)",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 36,
+      "max": 44
+    },
+    "needsAttention": [
+      {
+        "min": 30,
+        "max": 35
+      },
+      {
+        "min": 45,
+        "max": 50
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 29
+      },
+      {
+        "min": 51,
+        "max": 100
+      }
+    ],
+    "unit": "%"
+  },
+  {
+    "metric": "Platelet Count",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 150,
+      "max": 450
+    },
+    "needsAttention": [
+      {
+        "min": 100,
+        "max": 149
+      },
+      {
+        "min": 451,
+        "max": 600
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 99
+      },
+      {
+        "min": 601,
+        "max": 1000
+      }
+    ],
+    "unit": "10³/µL"
+  },
+  {
+    "metric": "Platelet Count",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 150,
+      "max": 450
+    },
+    "needsAttention": [
+      {
+        "min": 100,
+        "max": 149
+      },
+      {
+        "min": 451,
+        "max": 600
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 99
+      },
+      {
+        "min": 601,
+        "max": 1000
+      }
+    ],
+    "unit": "10³/µL"
+  },
+  {
+    "metric": "Triglycerides",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 0,
+      "max": 150
+    },
+    "needsAttention": [
+      {
+        "min": 151,
+        "max": 199
+      }
+    ],
+    "bad": [
+      {
+        "min": 200,
+        "max": 1000
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "Triglycerides",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 0,
+      "max": 150
+    },
+    "needsAttention": [
+      {
+        "min": 151,
+        "max": 199
+      }
+    ],
+    "bad": [
+      {
+        "min": 200,
+        "max": 1000
+      }
+    ],
+    "unit": "mg/dL"
+  },
+  {
+    "metric": "C-Reactive Protein (CRP)",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 0,
+      "max": 3
+    },
+    "needsAttention": [
+      {
+        "min": 3.1,
+        "max": 10
+      }
+    ],
+    "bad": [
+      {
+        "min": 10.1,
+        "max": 100
+      }
+    ],
+    "unit": "mg/L"
+  },
+  {
+    "metric": "C-Reactive Protein (CRP)",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 0,
+      "max": 3
+    },
+    "needsAttention": [
+      {
+        "min": 3.1,
+        "max": 10
+      }
+    ],
+    "bad": [
+      {
+        "min": 10.1,
+        "max": 100
+      }
+    ],
+    "unit": "mg/L"
+  },
+  {
+    "metric": "Vitamin B12",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 200,
+      "max": 900
+    },
+    "needsAttention": [
+      {
+        "min": 180,
+        "max": 199
+      },
+      {
+        "min": 901,
+        "max": 1100
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 179
+      },
+      {
+        "min": 1101,
+        "max": 2000
+      }
+    ],
+    "unit": "pg/mL"
+  },
+  {
+    "metric": "Vitamin B12",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 200,
+      "max": 900
+    },
+    "needsAttention": [
+      {
+        "min": 180,
+        "max": 199
+      },
+      {
+        "min": 901,
+        "max": 1100
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 179
+      },
+      {
+        "min": 1101,
+        "max": 2000
+      }
+    ],
+    "unit": "pg/mL"
+  },
+  {
+    "metric": "Ferritin",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 30,
+      "max": 300
+    },
+    "needsAttention": [
+      {
+        "min": 20,
+        "max": 29
+      },
+      {
+        "min": 301,
+        "max": 400
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 19
+      },
+      {
+        "min": 401,
+        "max": 1000
+      }
+    ],
+    "unit": "ng/mL"
+  },
+  {
+    "metric": "Ferritin",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 15,
+      "max": 150
+    },
+    "needsAttention": [
+      {
+        "min": 10,
+        "max": 14
+      },
+      {
+        "min": 151,
+        "max": 200
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 9
+      },
+      {
+        "min": 201,
+        "max": 500
+      }
+    ],
+    "unit": "ng/mL"
+  },
+  {
+    "metric": "Testosterone",
+    "ageGroup": "20-29",
+    "gender": "Male",
+    "good": {
+      "min": 300,
+      "max": 1000
+    },
+    "needsAttention": [
+      {
+        "min": 250,
+        "max": 299
+      },
+      {
+        "min": 1001,
+        "max": 1200
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 249
+      },
+      {
+        "min": 1201,
+        "max": 2000
+      }
+    ],
+    "unit": "ng/dL"
+  },
+  {
+    "metric": "Testosterone",
+    "ageGroup": "20-29",
+    "gender": "Female",
+    "good": {
+      "min": 15,
+      "max": 70
+    },
+    "needsAttention": [
+      {
+        "min": 71,
+        "max": 100
+      }
+    ],
+    "bad": [
+      {
+        "min": 0,
+        "max": 14
+      },
+      {
+        "min": 101,
+        "max": 200
+      }
+    ],
+    "unit": "ng/dL"
+  }
+]
