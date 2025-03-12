@@ -6,6 +6,7 @@ import { HealthScoreForm } from '@/components/health-form/HealthScoreForm';
 import { WeightAdjuster } from '@/components/health-form/WeightAdjuster';
 import { PromptTemplateEditor } from '@/components/health-form/PromptTemplateEditor';
 import { Expandable } from '@/components/ui/Expandable';
+import { HealthScoreResults } from '@/components/health-form/HealthScoreResults';
 import { HEALTH_GROUPS } from '../api/health-score/types';
 
 export default function HealthScorePage() {
@@ -50,7 +51,7 @@ export default function HealthScorePage() {
             const result = await response.json();
             setResult(result);
         } catch (err: any) {
-                setError(err.message || 'An error occurred during calculation');
+            setError(err.message || 'An error occurred during calculation');
         } finally {
             setLoading(false);
         }
@@ -60,14 +61,20 @@ export default function HealthScorePage() {
         <div className="container mx-auto px-4 py-8">
             <h1 className="text-3xl font-bold mb-8">Health Score Calculator and Recommendations</h1>
             
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">   
                 <div className="lg:col-span-2 space-y-4">
-
                     <Expandable 
                         title="Health Metrics" 
                         defaultExpanded={true}
                     >
                         <HealthScoreForm onSubmit={handleFormSubmit} loading={loading} />
+                    </Expandable>        
+
+                    <Expandable 
+                        title="Category Weights" 
+                        defaultExpanded={true}
+                    >
+                        <WeightAdjuster onWeightsChange={setWeights} />
                     </Expandable>
 
                     <Expandable 
@@ -76,121 +83,13 @@ export default function HealthScorePage() {
                     >
                         <PromptTemplateEditor onTemplateChange={setCustomTemplate} />
                     </Expandable>
-
-                    <Expandable 
-                        title="Category Weights" 
-                        defaultExpanded={false}
-                    >
-                        <WeightAdjuster onWeightsChange={setWeights} />
-                    </Expandable>
-
-
                 </div>
 
                 {/* Results Section */}
+                {result && (
                 <div className="lg:col-span-2">
-                    {error && (
-                        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
-                            {error}
-                        </div>
-                    )}
-
-                    {result && (
-                            <div className="space-y-6">
-                                <div className="bg-white rounded-lg">
-                                    <h2 className="text-2xl font-bold mb-4">Overall Score</h2>
-                                    <div className="text-4xl font-bold text-center mb-4">
-                                        {result.scores.overallScore}
-                                    </div>
-                                    <div className="w-full bg-gray-200 rounded-full h-4">
-                                        <div
-                                            className="bg-blue-500 h-4 rounded-full"
-                                            style={{ width: `${result.scores.overallScore}%` }}
-                                        ></div>
-                                    </div>
-                                </div>
-
-                                <Expandable 
-                                    title="Detailed Scores" 
-                                    defaultExpanded={false}
-                                >
-                                    <div className="space-y-4">
-                                        {Object.entries(HEALTH_GROUPS).map(([key, group]) => (
-                                            <div key={key} className="bg-white rounded-lg">
-                                            <h3 className="font-semibold mb-2">
-                                                {group.title} ({group.weight}%)
-                                            </h3>
-                                            <div className="text-2xl font-bold mb-2">
-                                                {result.scores[key as keyof typeof result.scores]}
-                                            </div>
-                                            <div className="w-full bg-gray-200 rounded-full h-2">
-                                                <div
-                                                    className="bg-blue-500 h-2 rounded-full"
-                                                    style={{ width: `${result.scores[key as keyof typeof result.scores]}%` }}
-                                                ></div>
-                                            </div>
-                                        </div>
-                                        ))}
-                                    </div>
-                                </Expandable>
-
-                                <div className="bg-white rounded-lg">
-                                    <h2 className="text-2xl font-bold mb-4">Recommendations</h2>
-                                    {Object.entries(HEALTH_GROUPS).map(([key, group]) => {
-                                        const recs = result.recommendations[key as keyof typeof result.recommendations];
-                                        return recs && recs.length > 0 ? (
-                                            <div key={key} className="mb-4">
-                                                <h3 className="font-semibold mb-2">{group.title}</h3>
-                                                <ul className="list-disc list-inside space-y-1">
-                                                    {recs.map((rec, index) => (
-                                                        <li key={index} className="text-gray-700">{rec}</li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        ) : null;
-                                    })}
-                                </div>
-
-                                <div className="bg-white rounded-lg p-4">
-                                    <h2 className="text-2xl font-bold mb-4">Summary</h2>
-                                    <p className="text-gray-700">{result.summary}</p>
-                                </div>
-
-
-                                <Expandable
-                                    title="Parameter Status"
-                                    defaultExpanded={false}
-                                >
-                                    <div className="space-y-4">
-                                        {Object.entries(HEALTH_GROUPS).map(([key, group]) => (
-                                            <div key={key} className="bg-white rounded-lg p-4">
-                                                <h3 className="font-semibold mb-2">{group.title}</h3>
-                                                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                                    {group.metrics.map((metric) => (
-                                                        <div key={metric} className="flex justify-between">
-                                                            <span className="text-gray-600">{metric}:</span>
-                                                            <span className="font-medium">
-                                                                {(() => {
-                                                                    const status = result.parameters_status[metric as keyof typeof result.parameters_status];
-                                                                    let color = '';
-                                                                    if (status === 'excellent') color = 'text-green-600';
-                                                                    else if (status === 'normal') color = 'text-yellow-600';
-                                                                    else if (status === 'needs_attention') color = 'text-red-600';
-                                                                    return <span className={color}>
-                                                                        {result.parameters_status[metric as keyof typeof result.parameters_status]}
-                                                                    </span>;
-                                                                })()}
-                                                            </span>
-                                                        </div>
-                                                    ))}
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </Expandable>
-                            </div>
-                    )}
-                </div>
+                    <HealthScoreResults result={result} error={error} />
+                </div>)}
             </div>
         </div>
     );
