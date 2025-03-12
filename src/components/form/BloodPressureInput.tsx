@@ -16,7 +16,7 @@ export function BloodPressureInput({
                 <div>
                     <input
                         type="number"
-                        {...register('bloodPressure.systolicValue', { 
+                        {...register('bloodPressureSystolic', { 
                             required,
                             min: 70,
                             max: 200
@@ -28,7 +28,7 @@ export function BloodPressureInput({
                 <div>
                     <input
                         type="number"
-                        {...register('bloodPressure.diastolicValue', { 
+                        {...register('bloodPressureDiastolic', { 
                             required,
                             min: 40,
                             max: 130

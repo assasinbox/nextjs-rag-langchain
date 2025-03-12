@@ -1,37 +1,3 @@
-// export type HealthMetric = {
-//   [key: string]: number;
-// };
-
-// export const HEALTH_GROUPS = [
-//   'Activity',
-//   'Water',
-//   'Sleep',
-//   'Nutrition',
-//   'Weight',
-//   'Heart Health',
-//   'Mental Health'
-// ] as const;
-
-// export type HealthGroup = (typeof HEALTH_GROUPS)[number];
-
-// export const METRICS_BY_GROUP = {
-//   // 'Base Metrics': ['Sex', 'Age', 'Weight', 'Height', 'BMI'],
-//   'Activity': ['Active Energy Burned', 'Basal Energy Burned', 'Stand Hours', 
-//               'Exercise Minutes', 'Step Count', 'Flights Climbed', 'Distance'],
-//   'Water': ['Water'],
-//   'Sleep': ['Sleep Analysis', 'Deep Sleep', 'REM Sleep', 'Core Sleep', 
-//             'Sleep Awake', 'Sleep Latency', 'Sleep Quality'],
-//   'Nutrition': ['Dietary Energy', 'Dietary Carbohydrates', 'Dietary Protein', 
-//                'Dietary Fat', 'Dietary Fiber', 'Dietary Sugar', 'Dietary Sodium'],
-//   'Weight': ['Height', 'Body Mass', 'Body Mass Index', 'Body Fat Percentage', 
-//              'Lean Body Mass', 'Waist Circumference'],
-//   'Heart Health': ['Heart Rate', 'Resting Heart Rate', 'Walking Heart Rate Average',
-//                   'Heart Rate Variability', 'Blood Pressure Systolic', 
-//                   'Blood Pressure Diastolic', 'Respiratory Rate', 
-//                   'Blood Oxygen Saturation', 'Body Temperature'],
-//   'Mental Health': ['Mindful Minutes', 'Mindful Session', 'Mood', 'Stress Levels',
-//                    'Energy Levels', 'Social Interactions']
-// } as const;
 export interface RequestBody {
   data: HealthData;
   weights: CategoryWeights;
@@ -108,7 +74,7 @@ export interface HealthData extends BaseHealthData {
   bloodOxygenSaturation: number;
   bodyTemperature: number;
   ECGOutput: number;
-  ECGClassification: string;
+  ECGClassification: number;
   // Mental health metrics
   mindfulMinutes: number;
   mindfulSession: number;
@@ -117,18 +83,6 @@ export interface HealthData extends BaseHealthData {
   energyLevels: number;
   socialInteractions: number;
 }
-
-// Helper function to convert metric names to camelCase
-// const toCamelCase = (str: string): string => {
-//   return str
-//     .split(' ')
-//     .map((word, index) => 
-//       index === 0 
-//         ? word.toLowerCase() 
-//         : word.charAt(0).toUpperCase() + word.slice(1)
-//     )
-//     .join('');
-// };
 
 // Default base health data
 export const defaultBaseHealthData: BaseHealthData = {
@@ -189,7 +143,7 @@ export const defaultHealthData: HealthData = {
   bloodOxygenSaturation: 98,
   bodyTemperature: 36.6,
   ECGOutput: 0,
-  ECGClassification: 'Normal',
+  ECGClassification: 1,
   // Mental health metrics
   mindfulMinutes: 15,
   mindfulSession: 1,
@@ -258,52 +212,3 @@ export const HEALTH_GROUPS = {
     weight: 10  
   }
  } as const;
-
-// Updated mapping to include base health data fields
-// export const METRIC_TO_CAMEL_CASE: Record<string, keyof HealthData> = {
-//   'Sex': 'sex',
-//   'Age': 'age',
-//   'Height': 'height',
-//   'Active Energy Burned': 'activeEnergyBurned',
-//   'Basal Energy Burned': 'basalEnergyBurned',
-//   'Stand Hours': 'standHours',
-//   'Exercise Minutes': 'exerciseMinutes',
-//   'Step Count': 'stepCount',
-//   'Flights Climbed': 'flightsClimbed',
-//   'Distance': 'distance',
-//   'Water': 'water',
-//   'Sleep Analysis': 'sleepAnalysis',
-//   'Deep Sleep': 'deepSleep',
-//   'REM Sleep': 'remSleep',
-//   'Core Sleep': 'coreSleep',
-//   'Sleep Awake': 'sleepAwake',
-//   'Sleep Latency': 'sleepLatency',
-//   'Sleep Quality': 'sleepQuality',
-//   'Dietary Energy': 'dietaryEnergy',
-//   'Dietary Carbohydrates': 'dietaryCarbohydrates',
-//   'Dietary Protein': 'dietaryProtein',
-//   'Dietary Fat': 'dietaryFat',
-//   'Dietary Fiber': 'dietaryFiber',
-//   'Dietary Sugar': 'dietarySugar',
-//   'Dietary Sodium': 'dietarySodium',
-//   'Body Mass': 'bodyMass',
-//   'Body Mass Index': 'bodyMassIndex',
-//   'Body Fat Percentage': 'bodyFatPercentage',
-//   'Lean Body Mass': 'leanBodyMass',
-//   'Waist Circumference': 'waistCircumference',
-//   'Heart Rate': 'heartRate',
-//   'Resting Heart Rate': 'restingHeartRate',
-//   'Walking Heart Rate Average': 'walkingHeartRateAverage',
-//   'Heart Rate Variability': 'heartRateVariability',
-//   'Blood Pressure Systolic': 'bloodPressureSystolic',
-//   'Blood Pressure Diastolic': 'bloodPressureDiastolic',
-//   'Respiratory Rate': 'respiratoryRate',
-//   'Blood Oxygen Saturation': 'bloodOxygenSaturation',
-//   'Body Temperature': 'bodyTemperature',
-//   'Mindful Minutes': 'mindfulMinutes',
-//   'Mindful Session': 'mindfulSession',
-//   'Mood': 'mood',
-//   'Stress Levels': 'stressLevels',
-//   'Energy Levels': 'energyLevels',
-//   'Social Interactions': 'socialInteractions'
-// };
