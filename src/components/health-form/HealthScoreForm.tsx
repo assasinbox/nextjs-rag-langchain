@@ -46,7 +46,7 @@ export function HealthScoreForm({ onSubmit, loading }: HealthScoreFormProps) {
         {loading ? 'Calculating...' : 'Calculate Health Score'}
       </button>
       <fieldset className="border p-4 rounded">
-        <legend className="font-bold">Base Metrics</legend>
+        <legend className="font-bold">Base User Data</legend>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           <SelectInput
             label="Sex"

@@ -7,7 +7,7 @@ interface OverallScoreProps {
 export function OverallScore({ overallScore }: OverallScoreProps) {
   return (
     <div className="bg-white rounded-lg">
-      <h2 className="text-2xl font-bold mb-4">Overall Score</h2>
+      <h2 className="text-2xl font-bold mb-4">Health Score</h2>
       <div className="text-4xl font-bold text-center mb-4">
         {overallScore}
       </div>

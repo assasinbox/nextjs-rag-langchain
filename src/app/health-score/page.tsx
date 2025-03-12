@@ -71,8 +71,8 @@ export default function HealthScorePage() {
                     </Expandable>        
 
                     <Expandable 
-                        title="Category Weights" 
-                        defaultExpanded={true}
+                        title="Focuses Weights" 
+                        defaultExpanded={false}
                     >
                         <WeightAdjuster onWeightsChange={setWeights} />
                     </Expandable>

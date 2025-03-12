@@ -29,13 +29,15 @@ export function HealthScoreResults({ result, error }: HealthScoreResultsProps) {
   return (
     <div className="space-y-6">
       <OverallScore overallScore={result.scores.overallScore} />
-      <Expandable  title="Health Metrics" defaultExpanded={false} >
+      <Expandable  title="Focuses Scores" defaultExpanded={false} >
         <FocusesScore scores={result.scores} />
       </Expandable>  
       
       <Recommendations recommendations={result.recommendations} />
       <Summary summary={result.summary} />
-      <ParametersStatuses parametersStatus={result.parameters_status} />
+      <Expandable  title="Health Metrics Scores" defaultExpanded={false} >
+        <ParametersStatuses parametersStatus={result.parameters_status} />
+      </Expandable>        
     </div>
   );
 } 

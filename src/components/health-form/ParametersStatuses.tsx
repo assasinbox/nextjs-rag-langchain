@@ -9,7 +9,6 @@ interface ParametersStatusesProps {
 export function ParametersStatuses({ parametersStatus }: ParametersStatusesProps) {
   return (
     <div className="bg-white rounded-lg p-4">
-      <h2 className="text-2xl font-bold mb-4">Parameter Status</h2>
       <div className="space-y-4">
         {Object.entries(HEALTH_GROUPS).map(([key, group]) => (
           <div key={key} className="bg-white rounded-lg p-4">

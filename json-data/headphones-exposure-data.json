@@ -1,0 +1,1022 @@
+[
+    {
+       "device":{
+          "firmwareVersion":null,
+          "model":"0x4",
+          "hardwareVersion":null,
+          "softwareVersion":null,
+          "udiDeviceIdentifier":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "name":"MAJOR V",
+          "manufacturer":"0x94"
+       },
+       "quantity":70.92207833193554,
+       "endDate":"2025-01-01T15:28:35.000Z",
+       "startDate":"2025-01-01T15:26:38.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "version":"18.1.1",
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          },
+          "productType":"iPhone13,2",
+          "operatingSystemVersion":"18.1.1"
+       },
+       "uuid":"98562E1B-0527-49FA-8490-7EC391DE535C",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "model":"0x4",
+          "name":"MAJOR V",
+          "firmwareVersion":null,
+          "hardwareVersion":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "manufacturer":"0x94",
+          "softwareVersion":null,
+          "udiDeviceIdentifier":null
+       },
+       "quantity":70.9718246459961,
+       "endDate":"2025-01-05T11:45:22.000Z",
+       "startDate":"2025-01-05T11:45:19.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "productType":"iPhone13,2",
+          "version":"18.1.1",
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          },
+          "operatingSystemVersion":"18.1.1"
+       },
+       "uuid":"97C05B99-7904-4B37-9D8C-6369BE34712F",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "model":"0x4",
+          "udiDeviceIdentifier":null,
+          "manufacturer":"0x94",
+          "hardwareVersion":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "softwareVersion":null,
+          "name":"MAJOR V",
+          "firmwareVersion":null
+       },
+       "quantity":70.9718246459961,
+       "endDate":"2025-01-06T12:12:49.000Z",
+       "startDate":"2025-01-06T12:12:46.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "version":"18.1.1",
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          },
+          "operatingSystemVersion":"18.1.1",
+          "productType":"iPhone13,2"
+       },
+       "uuid":"5C35E0A2-BE3F-4915-8131-90DBC69374CC",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "model":"0x4",
+          "softwareVersion":null,
+          "manufacturer":"0x94",
+          "name":"MAJOR V",
+          "firmwareVersion":null,
+          "hardwareVersion":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "udiDeviceIdentifier":null
+       },
+       "quantity":68.20510864257812,
+       "endDate":"2025-01-06T17:40:20.000Z",
+       "startDate":"2025-01-06T17:40:17.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "operatingSystemVersion":"18.1.1",
+          "version":"18.1.1",
+          "productType":"iPhone13,2",
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          }
+       },
+       "uuid":"D829E3A0-29DA-4C76-B11F-3629A0172D7B",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "manufacturer":"0x94",
+          "hardwareVersion":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "firmwareVersion":null,
+          "model":"0x4",
+          "softwareVersion":null,
+          "udiDeviceIdentifier":null,
+          "name":"MAJOR V"
+       },
+       "quantity":27.887590408325195,
+       "endDate":"2025-01-06T17:40:23.000Z",
+       "startDate":"2025-01-06T17:40:20.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "operatingSystemVersion":"18.1.1",
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          },
+          "version":"18.1.1",
+          "productType":"iPhone13,2"
+       },
+       "uuid":"21F89306-2117-4FC4-8B64-3B483C4AA9D9",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "manufacturer":"0x94",
+          "hardwareVersion":null,
+          "firmwareVersion":null,
+          "udiDeviceIdentifier":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "name":"MAJOR V",
+          "model":"0x4",
+          "softwareVersion":null
+       },
+       "quantity":68.20154571533203,
+       "endDate":"2025-01-06T17:44:08.000Z",
+       "startDate":"2025-01-06T17:44:05.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "version":"18.1.1",
+          "productType":"iPhone13,2",
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          },
+          "operatingSystemVersion":"18.1.1"
+       },
+       "uuid":"DF5EA640-57AE-4AE3-A1CD-03EED73CC068",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "model":"0x4",
+          "softwareVersion":null,
+          "udiDeviceIdentifier":null,
+          "firmwareVersion":null,
+          "hardwareVersion":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "manufacturer":"0x94",
+          "name":"MAJOR V"
+       },
+       "quantity":37.80636215209961,
+       "endDate":"2025-01-06T17:44:12.000Z",
+       "startDate":"2025-01-06T17:44:08.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "operatingSystemVersion":"18.1.1",
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          },
+          "productType":"iPhone13,2",
+          "version":"18.1.1"
+       },
+       "uuid":"2F21FD67-BCAB-4015-8EEF-1C675C8DF74F",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "firmwareVersion":null,
+          "name":"MAJOR V",
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "manufacturer":"0x94",
+          "model":"0x4",
+          "softwareVersion":null,
+          "hardwareVersion":null,
+          "udiDeviceIdentifier":null
+       },
+       "quantity":70.9718246459961,
+       "endDate":"2025-01-06T18:19:11.000Z",
+       "startDate":"2025-01-06T18:19:08.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "operatingSystemVersion":"18.1.1",
+          "productType":"iPhone13,2",
+          "version":"18.1.1",
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          }
+       },
+       "uuid":"2D012930-2690-46D8-B371-6F3C87428707",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "softwareVersion":null,
+          "firmwareVersion":null,
+          "name":"MAJOR V",
+          "udiDeviceIdentifier":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "manufacturer":"0x94",
+          "hardwareVersion":null,
+          "model":"0x4"
+       },
+       "quantity":64.95690082805608,
+       "endDate":"2025-01-06T18:41:08.000Z",
+       "startDate":"2025-01-06T18:38:04.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "operatingSystemVersion":"18.1.1",
+          "version":"18.1.1",
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          },
+          "productType":"iPhone13,2"
+       },
+       "uuid":"00692E4F-1345-4838-8D92-204F756CFD34",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "softwareVersion":null,
+          "firmwareVersion":null,
+          "udiDeviceIdentifier":null,
+          "name":"MAJOR V",
+          "hardwareVersion":null,
+          "manufacturer":"0x94",
+          "model":"0x4",
+          "localIdentifier":"00:25:D1:41:F7:65-tacl"
+       },
+       "quantity":69.88115692138672,
+       "endDate":"2025-01-06T18:41:11.000Z",
+       "startDate":"2025-01-06T18:41:08.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "operatingSystemVersion":"18.1.1",
+          "productType":"iPhone13,2",
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          },
+          "version":"18.1.1"
+       },
+       "uuid":"4B8AB371-90E8-4B82-8F9D-A181A60AD154",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "model":"0x4",
+          "udiDeviceIdentifier":null,
+          "hardwareVersion":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "manufacturer":"0x94",
+          "firmwareVersion":null,
+          "softwareVersion":null,
+          "name":"MAJOR V"
+       },
+       "quantity":79.8647286649533,
+       "endDate":"2025-01-07T08:40:50.000Z",
+       "startDate":"2025-01-07T08:40:38.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "operatingSystemVersion":"18.1.1",
+          "version":"18.1.1",
+          "productType":"iPhone13,2",
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          }
+       },
+       "uuid":"FAFC7F27-83AC-44B0-90C4-B8BB77D8C3CE",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "udiDeviceIdentifier":null,
+          "firmwareVersion":null,
+          "name":"MAJOR V",
+          "model":"0x4",
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "manufacturer":"0x94",
+          "softwareVersion":null,
+          "hardwareVersion":null
+       },
+       "quantity":81.96724700927734,
+       "endDate":"2025-01-07T14:56:09.000Z",
+       "startDate":"2025-01-07T14:56:06.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "productType":"iPhone13,2",
+          "operatingSystemVersion":"18.1.1",
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          },
+          "version":"18.1.1"
+       },
+       "uuid":"C19066B5-D493-4C78-B083-A9504EE58875",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "hardwareVersion":null,
+          "model":"0x4",
+          "firmwareVersion":null,
+          "name":"MAJOR V",
+          "udiDeviceIdentifier":null,
+          "manufacturer":"0x94",
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "softwareVersion":null
+       },
+       "quantity":67.48296112399325,
+       "endDate":"2025-01-07T14:56:27.000Z",
+       "startDate":"2025-01-07T14:56:15.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "productType":"iPhone13,2",
+          "operatingSystemVersion":"18.1.1",
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          },
+          "version":"18.1.1"
+       },
+       "uuid":"5D9988DF-695A-41EC-B943-C474B2B445C2",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "name":"MAJOR V",
+          "udiDeviceIdentifier":null,
+          "softwareVersion":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "hardwareVersion":null,
+          "manufacturer":"0x94",
+          "model":"0x4",
+          "firmwareVersion":null
+       },
+       "quantity":74.90368708301877,
+       "endDate":"2025-01-07T15:03:24.000Z",
+       "startDate":"2025-01-07T14:56:27.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "version":"18.1.1",
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          },
+          "productType":"iPhone13,2",
+          "operatingSystemVersion":"18.1.1"
+       },
+       "uuid":"F8829F02-AD2D-446E-AB45-1A7A090611CD",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "name":"MAJOR V",
+          "firmwareVersion":null,
+          "hardwareVersion":null,
+          "manufacturer":"0x94",
+          "softwareVersion":null,
+          "model":"0x4",
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "udiDeviceIdentifier":null
+       },
+       "quantity":74.34248420566834,
+       "endDate":"2025-01-07T15:03:30.000Z",
+       "startDate":"2025-01-07T15:03:24.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "productType":"iPhone13,2",
+          "operatingSystemVersion":"18.1.1",
+          "version":"18.1.1",
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          }
+       },
+       "uuid":"3D29184F-CC8A-48A7-81E7-D5A7654DFA01",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "firmwareVersion":null,
+          "manufacturer":"0x94",
+          "softwareVersion":null,
+          "hardwareVersion":null,
+          "udiDeviceIdentifier":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "name":"MAJOR V",
+          "model":"0x4"
+       },
+       "quantity":78.78482858351876,
+       "endDate":"2025-01-07T15:25:59.000Z",
+       "startDate":"2025-01-07T15:03:30.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "operatingSystemVersion":"18.1.1",
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          },
+          "version":"18.1.1",
+          "productType":"iPhone13,2"
+       },
+       "uuid":"CE5FF272-8196-4D15-9922-7E7E4327EA81",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "manufacturer":"0x94",
+          "name":"MAJOR V",
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "udiDeviceIdentifier":null,
+          "softwareVersion":null,
+          "hardwareVersion":null,
+          "model":"0x4",
+          "firmwareVersion":null
+       },
+       "quantity":79.65561321250463,
+       "endDate":"2025-01-07T15:34:35.000Z",
+       "startDate":"2025-01-07T15:25:59.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "productType":"iPhone13,2",
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          },
+          "operatingSystemVersion":"18.1.1",
+          "version":"18.1.1"
+       },
+       "uuid":"FB65D216-66B3-4ED6-9A6F-E4FCE1A061EB",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "name":"MAJOR V",
+          "udiDeviceIdentifier":null,
+          "softwareVersion":null,
+          "firmwareVersion":null,
+          "manufacturer":"0x94",
+          "hardwareVersion":null,
+          "model":"0x4",
+          "localIdentifier":"00:25:D1:41:F7:65-tacl"
+       },
+       "quantity":77.10684204101562,
+       "endDate":"2025-01-07T15:34:39.000Z",
+       "startDate":"2025-01-07T15:34:35.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          },
+          "operatingSystemVersion":"18.1.1",
+          "version":"18.1.1",
+          "productType":"iPhone13,2"
+       },
+       "uuid":"54408449-1CE3-4939-B48E-EB203F9DDD73",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "udiDeviceIdentifier":null,
+          "hardwareVersion":null,
+          "model":"0x4",
+          "softwareVersion":null,
+          "manufacturer":"0x94",
+          "firmwareVersion":null,
+          "name":"MAJOR V",
+          "localIdentifier":"00:25:D1:41:F7:65-tacl"
+       },
+       "quantity":83.81834368580346,
+       "endDate":"2025-01-07T15:41:40.000Z",
+       "startDate":"2025-01-07T15:34:39.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "version":"18.1.1",
+          "operatingSystemVersion":"18.1.1",
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          },
+          "productType":"iPhone13,2"
+       },
+       "uuid":"BAD7D653-D603-4633-AD83-B730EA8994CF",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "softwareVersion":null,
+          "name":"MAJOR V",
+          "firmwareVersion":null,
+          "model":"0x4",
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "manufacturer":"0x94",
+          "hardwareVersion":null,
+          "udiDeviceIdentifier":null
+       },
+       "quantity":57.28035120400989,
+       "endDate":"2025-01-08T15:59:42.000Z",
+       "startDate":"2025-01-08T15:59:30.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "operatingSystemVersion":"18.1.1",
+          "productType":"iPhone13,2",
+          "version":"18.1.1",
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          }
+       },
+       "uuid":"E5074959-9A46-4C78-B84D-961DD3CE34B0",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "udiDeviceIdentifier":null,
+          "softwareVersion":null,
+          "model":"0x4",
+          "hardwareVersion":null,
+          "manufacturer":"0x94",
+          "name":"MAJOR V",
+          "firmwareVersion":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl"
+       },
+       "quantity":57.55364990234375,
+       "endDate":"2025-01-08T15:59:45.000Z",
+       "startDate":"2025-01-08T15:59:42.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "operatingSystemVersion":"18.1.1",
+          "version":"18.1.1",
+          "productType":"iPhone13,2",
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          }
+       },
+       "uuid":"81D4BDB6-A14F-49C1-9277-A562D3FA68B0",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "udiDeviceIdentifier":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "manufacturer":"0x94",
+          "firmwareVersion":null,
+          "hardwareVersion":null,
+          "name":"MAJOR V",
+          "model":"0x4",
+          "softwareVersion":null
+       },
+       "quantity":72.38944025553764,
+       "endDate":"2025-01-08T16:08:24.000Z",
+       "startDate":"2025-01-08T15:59:45.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "operatingSystemVersion":"18.1.1",
+          "version":"18.1.1",
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          },
+          "productType":"iPhone13,2"
+       },
+       "uuid":"3D58C0CE-5040-42C4-BC23-7D391C374AEC",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "softwareVersion":null,
+          "name":"MAJOR V",
+          "manufacturer":"0x94",
+          "firmwareVersion":null,
+          "hardwareVersion":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "udiDeviceIdentifier":null,
+          "model":"0x4"
+       },
+       "quantity":75.98575240881698,
+       "endDate":"2025-01-08T16:08:30.000Z",
+       "startDate":"2025-01-08T16:08:24.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          },
+          "productType":"iPhone13,2",
+          "operatingSystemVersion":"18.1.1",
+          "version":"18.1.1"
+       },
+       "uuid":"999B3453-7989-4BBA-877B-E073C6BB96DD",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "firmwareVersion":null,
+          "softwareVersion":null,
+          "udiDeviceIdentifier":null,
+          "hardwareVersion":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "name":"MAJOR V",
+          "manufacturer":"0x94",
+          "model":"0x4"
+       },
+       "quantity":77.01226822361238,
+       "endDate":"2025-01-08T16:12:41.000Z",
+       "startDate":"2025-01-08T16:08:30.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "version":"18.1.1",
+          "operatingSystemVersion":"18.1.1",
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          },
+          "productType":"iPhone13,2"
+       },
+       "uuid":"FBC70441-A2F4-4806-8667-93EE4CA30171",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "udiDeviceIdentifier":null,
+          "model":"0x4",
+          "manufacturer":"0x94",
+          "firmwareVersion":null,
+          "name":"MAJOR V",
+          "softwareVersion":null,
+          "hardwareVersion":null
+       },
+       "quantity":67.67842864990234,
+       "endDate":"2025-01-08T16:12:44.000Z",
+       "startDate":"2025-01-08T16:12:41.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "operatingSystemVersion":"18.1.1",
+          "version":"18.1.1",
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          },
+          "productType":"iPhone13,2"
+       },
+       "uuid":"DF22321A-B8EF-4EE7-80A4-924723A540F6",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "firmwareVersion":null,
+          "hardwareVersion":null,
+          "softwareVersion":null,
+          "manufacturer":"0x94",
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "model":"0x4",
+          "name":"MAJOR V",
+          "udiDeviceIdentifier":null
+       },
+       "quantity":75.62758618927168,
+       "endDate":"2025-01-08T16:26:04.000Z",
+       "startDate":"2025-01-08T16:12:44.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "version":"18.1.1",
+          "operatingSystemVersion":"18.1.1",
+          "productType":"iPhone13,2",
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          }
+       },
+       "uuid":"7EC925E8-86A5-41C2-87A9-57856A419C5D",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "hardwareVersion":null,
+          "udiDeviceIdentifier":null,
+          "firmwareVersion":null,
+          "name":"MAJOR V",
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "manufacturer":"0x94",
+          "model":"0x4",
+          "softwareVersion":null
+       },
+       "quantity":76.76750940697349,
+       "endDate":"2025-01-09T18:24:08.000Z",
+       "startDate":"2025-01-09T18:02:07.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "version":"18.1.1",
+          "productType":"iPhone13,2",
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          },
+          "operatingSystemVersion":"18.1.1"
+       },
+       "uuid":"7A93EF1F-AFC9-41EB-94E2-B83A72FEAFEE",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "hardwareVersion":null,
+          "manufacturer":"0x94",
+          "model":"0x4",
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "udiDeviceIdentifier":null,
+          "softwareVersion":null,
+          "firmwareVersion":null,
+          "name":"MAJOR V"
+       },
+       "quantity":69.45625305175781,
+       "endDate":"2025-01-09T18:24:11.000Z",
+       "startDate":"2025-01-09T18:24:08.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "productType":"iPhone13,2",
+          "version":"18.1.1",
+          "operatingSystemVersion":"18.1.1",
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          }
+       },
+       "uuid":"7BFFCF04-3A5D-48EB-A874-82A8C33FDE93",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "model":"0x4",
+          "softwareVersion":null,
+          "udiDeviceIdentifier":null,
+          "name":"MAJOR V",
+          "firmwareVersion":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "manufacturer":"0x94",
+          "hardwareVersion":null
+       },
+       "quantity":73.55546405059825,
+       "endDate":"2025-01-09T18:26:33.000Z",
+       "startDate":"2025-01-09T18:24:11.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "productType":"iPhone13,2",
+          "operatingSystemVersion":"18.1.1",
+          "version":"18.1.1",
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          }
+       },
+       "uuid":"70935A51-105D-4CE2-975D-008F45892C23",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "udiDeviceIdentifier":null,
+          "name":"MAJOR V",
+          "firmwareVersion":null,
+          "hardwareVersion":null,
+          "model":"0x4",
+          "softwareVersion":null,
+          "manufacturer":"0x94",
+          "localIdentifier":"00:25:D1:41:F7:65-tacl"
+       },
+       "quantity":76.48099275763965,
+       "endDate":"2025-01-09T18:43:39.000Z",
+       "startDate":"2025-01-09T18:26:33.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          },
+          "operatingSystemVersion":"18.1.1",
+          "version":"18.1.1",
+          "productType":"iPhone13,2"
+       },
+       "uuid":"CB0858C2-0765-4EAE-A559-2AF8C7706CD5",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "model":"0x4",
+          "firmwareVersion":null,
+          "manufacturer":"0x94",
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "udiDeviceIdentifier":null,
+          "name":"MAJOR V",
+          "softwareVersion":null,
+          "hardwareVersion":null
+       },
+       "quantity":68.48461151123047,
+       "endDate":"2025-01-09T18:43:42.000Z",
+       "startDate":"2025-01-09T18:43:39.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          },
+          "productType":"iPhone13,2",
+          "version":"18.1.1",
+          "operatingSystemVersion":"18.1.1"
+       },
+       "uuid":"5D3B35FF-70A3-484F-916B-118112F061CF",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "name":"MAJOR V",
+          "manufacturer":"0x94",
+          "model":"0x4",
+          "firmwareVersion":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "udiDeviceIdentifier":null,
+          "hardwareVersion":null,
+          "softwareVersion":null
+       },
+       "quantity":78.72177580306308,
+       "endDate":"2025-01-09T19:06:45.000Z",
+       "startDate":"2025-01-09T18:43:42.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          },
+          "operatingSystemVersion":"18.1.1",
+          "version":"18.1.1",
+          "productType":"iPhone13,2"
+       },
+       "uuid":"0B853B73-F325-469F-9B97-F73287BC6AC0",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "manufacturer":"0x94",
+          "name":"MAJOR V",
+          "hardwareVersion":null,
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "model":"0x4",
+          "firmwareVersion":null,
+          "udiDeviceIdentifier":null,
+          "softwareVersion":null
+       },
+       "quantity":68.20510864257812,
+       "endDate":"2025-01-09T20:09:06.000Z",
+       "startDate":"2025-01-09T20:09:03.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "source":{
+             "name":"iPhone (Владислав)",
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394"
+          },
+          "operatingSystemVersion":"18.1.1",
+          "version":"18.1.1",
+          "productType":"iPhone13,2"
+       },
+       "uuid":"4BD1FD74-4BA1-44C7-95BC-0B88C926348A",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    },
+    {
+       "device":{
+          "softwareVersion":null,
+          "manufacturer":"0x94",
+          "localIdentifier":"00:25:D1:41:F7:65-tacl",
+          "firmwareVersion":null,
+          "name":"MAJOR V",
+          "hardwareVersion":null,
+          "model":"0x4",
+          "udiDeviceIdentifier":null
+       },
+       "quantity":27.887590408325195,
+       "endDate":"2025-01-09T20:09:09.000Z",
+       "startDate":"2025-01-09T20:09:06.000Z",
+       "unit":"dBASPL",
+       "sourceRevision":{
+          "operatingSystemVersion":"18.1.1",
+          "productType":"iPhone13,2",
+          "source":{
+             "bundleIdentifier":"com.apple.health.CE52EC59-FB7D-4A1E-95DF-CA784A911394",
+             "name":"iPhone (Владислав)"
+          },
+          "version":"18.1.1"
+       },
+       "uuid":"C40BABEA-5221-49AD-92FF-B7F769B3698E",
+       "quantityType":"HKQuantityTypeIdentifierHeadphoneAudioExposure",
+       "metadata":{
+          
+       }
+    }
+ ]
