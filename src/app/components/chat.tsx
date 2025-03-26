@@ -106,7 +106,7 @@ const defaultHealthData: HealthData = {
 
 export function Chat() {
     const [healthData, setHealthData] = useState<HealthData>(defaultHealthData);
-    const [isEditing, setIsEditing] = useState(false);
+    const [isEditing, setIsEditing] = useState(true);
 
     const { messages, input, handleInputChange, handleSubmit: originalHandleSubmit } = useChat({
         api: 'api/ex4',
@@ -143,7 +143,7 @@ export function Chat() {
     return (
         <main className="flex flex-col w-full h-screen max-h-dvh bg-background">
             <header className="p-4 border-b w-full max-w-3xl mx-auto">
-                <h1 className="text-2xl font-bold">Health Assistant Chat</h1>
+                <h1 className="text-2xl font-bold">Health Assistant</h1>
             </header>
 
             <section className="p-4">
@@ -181,18 +181,8 @@ export function Chat() {
             <section className="container px-0 pb-10 flex flex-col flex-grow gap-4 mx-auto max-w-3xl">
             <Card className="mb-4">
                 
-            <Expandable title="Health Metrics" defaultExpanded={false} >
-                <CardHeader>
-                    <CardTitle className="flex justify-between items-center">
-                        Health Data
-                        <Button 
-                            variant="outline" 
-                            onClick={() => setIsEditing(!isEditing)}
-                        >
-                            {isEditing ? 'Cancel' : 'Edit'}
-                        </Button>
-                    </CardTitle>
-                </CardHeader>
+            <Expandable title="Health Data" defaultExpanded={false} >
+
                 <CardContent>
                     <div className="grid grid-cols-2 gap-4">
                         {Object.entries(healthData).map(([key, value]) => (
@@ -213,6 +203,16 @@ export function Chat() {
                         ))}
                     </div>
                     </CardContent>
+                    <CardHeader>
+                    <CardTitle className="flex justify-between items-center">
+                        <Button 
+                            variant="outline" 
+                            onClick={() => setIsEditing(!isEditing)}
+                        >
+                            {isEditing ? 'Cancel' : 'Edit'}
+                        </Button>
+                    </CardTitle>
+                </CardHeader>
                 </Expandable>
             </Card>
             </section>
