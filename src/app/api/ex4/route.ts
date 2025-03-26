@@ -22,7 +22,9 @@ import { CharacterTextSplitter } from 'langchain/text_splitter';
 // );
 
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-dynamic';
+export const maxDuration = 300; // Set maximum duration to 300 seconds for Edge function
+export const runtime = 'edge'; // Use Edge runtime for better performance
 
 /**
  * Basic memory formatter that stringifies and passes
