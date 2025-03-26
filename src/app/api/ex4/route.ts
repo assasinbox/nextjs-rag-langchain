@@ -17,9 +17,9 @@ import { CharacterTextSplitter } from 'langchain/text_splitter';
 //     ["/state", "/code", "/nickname", "/website", "/admission_date", "/admission_number", "/capital_city", "/capital_url", "/population", "/population_rank", "/constitution_url", "/twitter_url"],
 // );
 
-const loader = new JSONLoader(
-    "src/data/health-data.json",
-);
+// const loader = new JSONLoader(
+//     "src/data/health-data.json",
+// );
 
 
 export const dynamic = 'force-dynamic'
@@ -34,9 +34,9 @@ const formatMessage = (message: VercelChatMessage) => {
 
 const TEMPLATE = `You are a medical professional who advises people about their health. In context, all the patient information is available, use it to give answers.
 ==============================
-Контекст: {context}
+Context: {context}
 ==============================
-Поточний діалог: {chat_history}
+Current dialog: {chat_history}
 
 user: {question}
 assistant:`;
@@ -45,13 +45,22 @@ assistant:`;
 export async function POST(req: Request) {
     try {
         // Extract the `messages` from the body of the request
-        const { messages } = await req.json();
+        const { messages, data } = await req.json();
 
         const formattedPreviousMessages = messages.slice(0, -1).map(formatMessage);
 
-        const currentMessageContent = messages[messages.length - 1].content;
+        // Get the last message which includes health data
+        const lastMessage = messages[messages.length - 1];
+        const currentMessageContent = lastMessage.content;
+        const healthData = data.healthData;
 
-        const docs = await loader.load();
+        // Create a string representation of the health data
+        // const healthDataString = healthData ? 
+        //     `Current Health Data:\n${Object.entries(healthData)
+        //         .map(([key, value]) => `${key}: ${value}`)
+        //         .join('\n')}` : '';
+
+        // const docs = await loader.load();
 
         // load a JSON object
         // const textSplitter = new CharacterTextSplitter();
@@ -71,6 +80,11 @@ export async function POST(req: Request) {
         //     "twitter_url": "http://www.twitter.com/ksgovernment",
         // })]);
 
+        const textSplitter = new CharacterTextSplitter();
+        const docs = await textSplitter.createDocuments([healthData]);
+
+        console.log(healthData);
+        
         const prompt = PromptTemplate.fromTemplate(TEMPLATE);
 
         const model = new ChatOpenAI({
